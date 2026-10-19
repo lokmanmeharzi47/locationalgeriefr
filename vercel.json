@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/locationalgerie.html", "destination": "/index.html" },
+    { "source": "/locationalgerie", "destination": "/index.html" }
+  ]
+}
