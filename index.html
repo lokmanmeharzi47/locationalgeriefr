@@ -1,1635 +1,3146 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0084FF">
-<meta name="description" content="Location Algérie — Réservez votre véhicule en Algérie. Service fiable 7j/7, flotte récente, aéroports et grandes villes. Contactez-nous par WhatsApp, téléphone ou site officiel.">
-<title>Location Algérie | locationalgerie.fr</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0084FF" id="meta-theme-color">
+  <title>Location Algérie | Location de Voiture 7j/7 - locationalgerie.fr</title>
+  <meta name="description"
+    content="Location Algérie — Réservez votre voiture en Algérie au meilleur prix. Service 7j/7, flotte récente (Clio 5, 208, Ibiza, Tipo), aéroport d'Alger et grandes villes. Contactez-nous sur WhatsApp ou par téléphone.">
+  <meta name="keywords"
+    content="location voiture algerie, louer voiture alger, car rental algeria, location auto dar el beida, aeroport alger houari boumediene, clio 5 algerie">
+  <meta name="author" content="Location Algérie">
 
-<!-- Favicon / Icons -->
-<link rel="icon" type="image/svg+xml" href="logo.svg">
-<link rel="icon" type="image/jpeg" href="logo.jpg">
-<link rel="apple-touch-icon" href="logo.jpg">
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://locationalgerie.fr/">
+  <meta property="og:title" content="Location Algérie | Location de Voiture 7j/7">
+  <meta property="og:description"
+    content="Réservez votre voiture en Algérie. Service 7j/7, flotte moderne et récente, livraison aéroport d'Alger. Devis rapide WhatsApp & Appel direct.">
+  <meta property="og:image" content="https://locationalgerie.fr/logo.jpg">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta property="og:site_name" content="Location Algérie">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="ar_DZ">
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://locationalgerie.fr/">
+  <meta name="twitter:title" content="Location Algérie | Location de Voiture 7j/7">
+  <meta name="twitter:description"
+    content="Réservez votre véhicule en Algérie. Service 7j/7, flotte récente, aéroport d'Alger. Contact WhatsApp & Appel direct.">
+  <meta name="twitter:image" content="https://locationalgerie.fr/logo.jpg">
 
-<style>
-/* ==========================================================================
-   Design System - Location Algérie (Animated Color Background & Vector Icons)
+  <!-- Canonical & Favicons -->
+  <link rel="canonical" href="https://locationalgerie.fr/">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="apple-touch-icon" href="logo.jpg">
+
+  <!-- Google Fonts (Plus Jakarta Sans + Cairo for Arabic) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- JSON-LD Structured Data for LocalBusiness & AutoRental -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRental",
+  "name": "Location Algérie",
+  "alternateName": "كراء السيارات الجزائر",
+  "image": "https://locationalgerie.fr/logo.jpg",
+  "@id": "https://locationalgerie.fr/#agency",
+  "url": "https://locationalgerie.fr/",
+  "telephone": "+33767691659",
+  "email": "algeria.homerental@gmail.com",
+  "priceRange": "$$",
+  "currenciesAccepted": "EUR, DZD",
+  "paymentAccepted": "Cash, Virement",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Dar El Beïda",
+    "addressLocality": "Alger",
+    "addressRegion": "Alger",
+    "addressCountry": "DZ"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.7030,
+    "longitude": 3.2070
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": [
+    "https://play.google.com/store/apps/details?id=com.parisherb.myapp",
+    "https://www.instagram.com/algerie_loc",
+    "https://www.tiktok.com/@location.algerie0",
+    "https://snapchat.com/t/znQ1jUvp",
+    "https://goo.gl/maps/paNBs9VnmfFhrsESA",
+    "https://g.page/r/CaT9AwQUQlh0EBE/review"
+  ]
+}
+</script>
+
+  <style>
+    /* ==========================================================================
+   Design Tokens & CSS Variables (Dual Theme: Light / Dark)
    ========================================================================== */
-:root {
-  --primary-blue: #0084FF;
-  --primary-blue-dark: #0066CC;
-  --primary-blue-light: #EBF4FF;
-  --primary-blue-border: rgba(0, 132, 255, 0.18);
-  --navy: #082142;
-  --navy-light: #183863;
-  --text-primary: #082142;
-  --text-secondary: #4A6382;
-  --text-muted: #8298B2;
-  --card-bg: rgba(255, 255, 255, 0.94);
-  --card-border: rgba(0, 132, 255, 0.14);
-  --card-shadow: 0 24px 60px -12px rgba(8, 33, 66, 0.08), 0 8px 24px -4px rgba(0, 132, 255, 0.06);
-  --btn-bg: #FFFFFF;
-  --btn-border: rgba(0, 100, 220, 0.12);
-  --btn-shadow: 0 4px 14px rgba(8, 33, 66, 0.05);
-  --btn-hover-shadow: 0 14px 30px rgba(0, 132, 255, 0.20), 0 4px 10px rgba(8, 33, 66, 0.04);
-  --wa-green: #25D366;
-  --wa-green-bg: #E8F8EE;
-  --wa-green-border: rgba(37, 211, 102, 0.25);
-  --radius-xl: 32px;
-  --radius-lg: 20px;
-  --radius-md: 14px;
-}
+    :root {
+      --primary-blue: #0084FF;
+      --primary-blue-dark: #0066CC;
+      --primary-blue-light: #EBF4FF;
+      --primary-blue-border: rgba(0, 132, 255, 0.18);
+      --navy: #082142;
+      --navy-light: #183863;
+      --text-primary: #082142;
+      --text-secondary: #4A6382;
+      --text-muted: #7E95B1;
+      --bg-gradient-start: #F4F8FD;
+      --bg-gradient-mid: #E4F1FF;
+      --bg-gradient-end: #EDF7FF;
+      --card-bg: rgba(255, 255, 255, 0.94);
+      --card-border: rgba(0, 132, 255, 0.14);
+      --card-shadow: 0 24px 60px -12px rgba(8, 33, 66, 0.08), 0 8px 24px -4px rgba(0, 132, 255, 0.06);
+      --btn-bg: #FFFFFF;
+      --btn-border: rgba(0, 100, 220, 0.12);
+      --btn-shadow: 0 4px 14px rgba(8, 33, 66, 0.05);
+      --btn-hover-shadow: 0 14px 30px rgba(0, 132, 255, 0.20), 0 4px 10px rgba(8, 33, 66, 0.04);
+      --wa-green: #25D366;
+      --wa-green-dark: #128C7E;
+      --wa-green-bg: #F0FBF4;
+      --wa-green-border: rgba(37, 211, 102, 0.28);
+      --phone-blue: #0284C7;
+      --phone-blue-bg: #F0F9FF;
+      --phone-blue-border: rgba(2, 132, 199, 0.25);
+      --scroll-bg: #EEF5FC;
+      --subtle-pill-bg: rgba(0, 132, 255, 0.08);
+      --radius-xl: 32px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    [data-theme="dark"] {
+      --primary-blue: #2B9BFF;
+      --primary-blue-dark: #60B3FF;
+      --primary-blue-light: rgba(0, 132, 255, 0.15);
+      --primary-blue-border: rgba(43, 155, 255, 0.28);
+      --navy: #F0F6FD;
+      --navy-light: #D4E3F5;
+      --text-primary: #F3F7FC;
+      --text-secondary: #A0B7D4;
+      --text-muted: #6E87A8;
+      --bg-gradient-start: #060F1E;
+      --bg-gradient-mid: #0B192E;
+      --bg-gradient-end: #071324;
+      --card-bg: rgba(13, 27, 49, 0.90);
+      --card-border: rgba(43, 155, 255, 0.22);
+      --card-shadow: 0 24px 70px -12px rgba(0, 0, 0, 0.55), 0 8px 30px -4px rgba(0, 132, 255, 0.15);
+      --btn-bg: rgba(19, 39, 69, 0.75);
+      --btn-border: rgba(43, 155, 255, 0.18);
+      --btn-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      --btn-hover-shadow: 0 14px 30px rgba(0, 132, 255, 0.28), 0 4px 10px rgba(0, 0, 0, 0.35);
+      --wa-green-bg: rgba(37, 211, 102, 0.12);
+      --wa-green-border: rgba(37, 211, 102, 0.35);
+      --phone-blue-bg: rgba(2, 132, 199, 0.14);
+      --phone-blue-border: rgba(2, 132, 199, 0.35);
+      --scroll-bg: rgba(9, 21, 39, 0.85);
+      --subtle-pill-bg: rgba(43, 155, 255, 0.14);
+    }
 
-/* ==========================================================================
-   Animated Background Color Flow (Dynamic Living Gradient)
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-gradient-start);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 24px 16px 85px 16px;
+      color: var(--text-primary);
+      overflow-x: hidden;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    /* Background Layer isolated on its own GPU compositor plane (Zero repaint on scroll) */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background: radial-gradient(circle at 15% 10%, var(--bg-gradient-mid) 0%, var(--bg-gradient-start) 45%, var(--bg-gradient-end) 90%);
+      pointer-events: none;
+      transform: translateZ(0);
+    }
+
+    /* Arabic Typography Adaptation */
+    [dir="rtl"],
+    [dir="rtl"] body {
+      font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    /* Ambient Glow Orbs without expensive live blur filters (Eliminates mobile GPU lag) */
+    .bg-orb-1,
+    .bg-orb-2 {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: -1;
+      transform: translateZ(0);
+      opacity: 0.75;
+    }
+
+    .bg-orb-1 {
+      top: -120px;
+      left: 10%;
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, rgba(0, 132, 255, 0.16) 0%, rgba(0, 210, 255, 0.04) 45%, transparent 70%);
+    }
+
+    .bg-orb-2 {
+      bottom: -120px;
+      right: 5%;
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(circle, rgba(0, 90, 220, 0.12) 0%, rgba(8, 33, 66, 0.04) 45%, transparent 70%);
+    }
+
+    /* ==========================================================================
+   Main Container
    ========================================================================== */
-body {
-  min-height: 100vh;
-  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  background: linear-gradient(
-    -45deg,
-    #F4F8FD 0%,
-    #E4F1FF 20%,
-    #EDF7FF 40%,
-    #D6EBFF 60%,
-    #F0F6FD 80%,
-    #E1EFFF 99%
-  );
-  background-size: 350% 350%;
-  animation: bgGradientFlow 14s ease-in-out infinite alternate;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 30px 16px 50px 16px;
-  color: var(--text-primary);
-  overflow-x: hidden;
-  position: relative;
-}
+    .container {
+      max-width: 530px;
+      width: 100%;
+      padding: 24px 22px 34px 22px;
+      border-radius: var(--radius-xl);
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      box-shadow: var(--card-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      animation: containerEntrance 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
 
-@keyframes bgGradientFlow {
-  0% {
-    background-position: 0% 30%;
-  }
-  50% {
-    background-position: 100% 70%;
-  }
-  100% {
-    background-position: 40% 100%;
-  }
-}
+    @keyframes containerEntrance {
+      0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+      }
 
-/* Dynamic Ambient Color Glow Orbs */
-.bg-orb-1, .bg-orb-2, .bg-orb-3 {
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(80px);
-  pointer-events: none;
-  z-index: 0;
-  will-change: transform, opacity;
-}
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
 
-/* Orb 1: Top-left breathing cyan-azure aura */
-.bg-orb-1 {
-  top: -120px;
-  left: 15%;
-  width: 580px;
-  height: 580px;
-  background: radial-gradient(circle, rgba(0, 140, 255, 0.22) 0%, rgba(0, 200, 255, 0.08) 55%, transparent 75%);
-  animation: orbDrift1 14s ease-in-out infinite alternate,
-             orbColorPulse1 12s ease-in-out infinite alternate;
-}
-
-/* Orb 2: Bottom-right sapphire & royal blue aura */
-.bg-orb-2 {
-  bottom: -140px;
-  right: 10%;
-  width: 540px;
-  height: 540px;
-  background: radial-gradient(circle, rgba(0, 80, 220, 0.16) 0%, rgba(8, 33, 66, 0.06) 55%, transparent 75%);
-  animation: orbDrift2 16s ease-in-out infinite alternate,
-             orbColorPulse2 15s ease-in-out infinite alternate;
-}
-
-/* Orb 3: Center-floating ice beam */
-.bg-orb-3 {
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(circle, rgba(0, 180, 255, 0.12) 0%, rgba(130, 200, 255, 0.03) 60%, transparent 75%);
-  animation: orbDrift3 11s ease-in-out infinite alternate;
-}
-
-@keyframes orbDrift1 {
-  0% { transform: translate(0, 0) scale(0.95); }
-  50% { transform: translate(50px, 35px) scale(1.12); }
-  100% { transform: translate(-35px, 60px) scale(1); }
-}
-
-@keyframes orbDrift2 {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-50px, -40px) scale(1.18); }
-  100% { transform: translate(30px, -50px) scale(0.92); }
-}
-
-@keyframes orbDrift3 {
-  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.6; }
-  100% { transform: translate(-45%, -55%) scale(1.15); opacity: 0.95; }
-}
-
-@keyframes orbColorPulse1 {
-  0% { filter: blur(80px) hue-rotate(0deg); opacity: 0.8; }
-  50% { filter: blur(90px) hue-rotate(18deg); opacity: 1; }
-  100% { filter: blur(80px) hue-rotate(-15deg); opacity: 0.85; }
-}
-
-@keyframes orbColorPulse2 {
-  0% { filter: blur(80px) hue-rotate(0deg); opacity: 0.7; }
-  50% { filter: blur(85px) hue-rotate(-20deg); opacity: 0.95; }
-  100% { filter: blur(80px) hue-rotate(15deg); opacity: 0.75; }
-}
-
-/* ==========================================================================
-   Main Container Entrance
+    /* ==========================================================================
+   Top Header Bar (Language, Theme Toggle, QR Modal)
    ========================================================================== */
-.container {
-  max-width: 520px;
-  width: 100%;
-  padding: 38px 26px 36px 26px;
-  border-radius: var(--radius-xl);
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  box-shadow: var(--card-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.95);
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  animation: containerEntrance 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
+    .top-header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      padding: 0 4px;
+    }
 
-@keyframes containerEntrance {
-  0% {
-    opacity: 0;
-    transform: translateY(28px) scale(0.96);
-    filter: blur(6px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: blur(0px);
-  }
-}
+    .top-bar-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-/* ==========================================================================
-   Logo Start Animation & Ambient Floating
+    .control-btn {
+      background: var(--btn-bg);
+      border: 1px solid var(--btn-border);
+      color: var(--text-primary);
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      transition: transform var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .control-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary-blue);
+      box-shadow: 0 4px 12px rgba(0, 132, 255, 0.15);
+    }
+
+    .control-btn:active {
+      transform: translateY(0) scale(0.96);
+    }
+
+    .control-btn svg {
+      width: 15px;
+      height: 15px;
+      display: block;
+    }
+
+    .lang-badge {
+      color: var(--primary-blue);
+      font-weight: 800;
+    }
+
+    /* ==========================================================================
+   Logo & Verified Avatar
    ========================================================================== */
-.logo-wrapper {
-  position: relative;
-  width: 135px;
-  height: 135px;
-  margin: 0 auto 20px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .logo-wrapper {
+      position: relative;
+      width: 125px;
+      height: 125px;
+      margin: 0 auto 16px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.logo-pulse-ring {
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
-  border-radius: 36px;
-  border: 2px solid rgba(0, 132, 255, 0.5);
-  box-shadow: 0 0 25px rgba(0, 132, 255, 0.35);
-  pointer-events: none;
-  animation: pulseRing 2.6s cubic-bezier(0.22, 1, 0.36, 1) 0.3s 2;
-  opacity: 0;
-}
+    .logo-pulse-ring {
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      right: -6px;
+      bottom: -6px;
+      border-radius: 34px;
+      border: 2px solid rgba(0, 132, 255, 0.45);
+      box-shadow: 0 0 20px rgba(0, 132, 255, 0.3);
+      pointer-events: none;
+      animation: pulseRing 2.6s cubic-bezier(0.22, 1, 0.36, 1) 0.2s 2;
+      opacity: 0;
+    }
 
-.logo-pulse-ring.delay {
-  animation-delay: 0.8s;
-}
+    @keyframes pulseRing {
+      0% {
+        transform: scale(0.9);
+        opacity: 0.9;
+      }
 
-@keyframes pulseRing {
-  0% { transform: scale(0.85); opacity: 0.9; }
-  50% { transform: scale(1.35); opacity: 0.2; }
-  100% { transform: scale(1.6); opacity: 0; }
-}
+      50% {
+        transform: scale(1.3);
+        opacity: 0.15;
+      }
 
-.logo-frame {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow: 0 16px 36px -6px rgba(0, 120, 255, 0.32), 0 4px 14px rgba(8, 33, 66, 0.08);
-  border: 3px solid #FFFFFF;
-  background: #FFFFFF;
-  animation: logoStart 1s cubic-bezier(0.34, 1.56, 0.64, 1) both,
-             logoFloat 4s ease-in-out infinite alternate 1.2s;
-  cursor: pointer;
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
-}
+      100% {
+        transform: scale(1.5);
+        opacity: 0;
+      }
+    }
 
-.logo-frame:hover {
-  transform: scale(1.06) translateY(-4px) rotate(-1deg);
-  box-shadow: 0 24px 50px -4px rgba(0, 132, 255, 0.42), 0 8px 20px rgba(8, 33, 66, 0.12);
-}
+    .logo-frame {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 14px 34px -6px rgba(0, 120, 255, 0.28), 0 4px 12px rgba(8, 33, 66, 0.08);
+      border: 3px solid #FFFFFF;
+      background: #FFFFFF;
+      cursor: pointer;
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+    }
 
-.logo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+    [data-theme="dark"] .logo-frame {
+      border-color: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 14px 34px -6px rgba(0, 132, 255, 0.4);
+    }
 
-.logo-sheen {
-  position: absolute;
-  top: -50%;
-  left: -150%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    115deg,
-    transparent 25%,
-    rgba(255, 255, 255, 0.75) 50%,
-    transparent 75%
-  );
-  transform: rotate(25deg);
-  pointer-events: none;
-  animation: sheenSweep 2.2s ease-in-out 0.8s 1;
-}
+    .logo-frame:hover {
+      transform: scale(1.05) translateY(-3px) rotate(-1deg);
+      box-shadow: 0 20px 45px -4px rgba(0, 132, 255, 0.4);
+    }
 
-.logo-frame:hover .logo-sheen {
-  animation: sheenSweep 1.2s ease-in-out;
-}
+    .logo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-@keyframes logoStart {
-  0% { transform: scale(0.25) rotate(-12deg); opacity: 0; filter: blur(10px); }
-  65% { transform: scale(1.1) rotate(2deg); opacity: 1; filter: blur(0px); }
-  85% { transform: scale(0.97) rotate(-1deg); }
-  100% { transform: scale(1) rotate(0deg); opacity: 1; filter: blur(0px); }
-}
+    .logo-sheen {
+      position: absolute;
+      top: -50%;
+      left: -150%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(115deg, transparent 25%, rgba(255, 255, 255, 0.8) 50%, transparent 75%);
+      transform: rotate(25deg);
+      pointer-events: none;
+      animation: sheenSweep 2.2s ease-in-out 0.4s 1;
+    }
 
-@keyframes logoFloat {
-  0% { transform: translateY(0px); }
-  100% { transform: translateY(-5px); }
-}
+    .logo-frame:hover .logo-sheen {
+      animation: sheenSweep 1.2s ease-in-out;
+    }
 
-@keyframes sheenSweep {
-  0% { left: -150%; }
-  100% { left: 150%; }
-}
+    @keyframes sheenSweep {
+      0% {
+        left: -150%;
+      }
 
-.verified-badge {
-  position: absolute;
-  bottom: -4px;
-  right: -4px;
-  width: 34px;
-  height: 34px;
-  background: linear-gradient(135deg, #0084FF 0%, #005ECE 100%);
-  border: 3px solid #FFFFFF;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF;
-  box-shadow: 0 4px 12px rgba(0, 100, 220, 0.35);
-  cursor: pointer;
-  z-index: 3;
-  animation: badgePop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.6s both;
-  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
+      100% {
+        left: 150%;
+      }
+    }
 
-.verified-badge:hover {
-  transform: scale(1.2) rotate(12deg);
-}
+    .verified-badge {
+      position: absolute;
+      bottom: -3px;
+      right: -3px;
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #0084FF 0%, #005ECE 100%);
+      border: 2.5px solid #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(0, 100, 220, 0.35);
+      cursor: pointer;
+      z-index: 3;
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
 
-@keyframes badgePop {
-  0% { transform: scale(0) rotate(-45deg); opacity: 0; }
-  100% { transform: scale(1) rotate(0deg); opacity: 1; }
-}
+    [dir="rtl"] .verified-badge {
+      right: auto;
+      left: -3px;
+    }
 
-/* ==========================================================================
-   Live Status Pill
+    .verified-badge:hover {
+      transform: scale(1.2) rotate(12deg);
+    }
+
+    /* ==========================================================================
+   Live Status Pill & Badges
    ========================================================================== */
-.status-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 14px;
-  border-radius: 24px;
-  background: var(--primary-blue-light);
-  border: 1px solid var(--primary-blue-border);
-  color: var(--primary-blue-dark);
-  font-size: 12.5px;
-  font-weight: 600;
-  margin-bottom: 18px;
-  box-shadow: 0 2px 8px rgba(0, 132, 255, 0.08);
-  animation: slideDownFade 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) 0.35s both;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  cursor: default;
-}
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 24px;
+      background: var(--primary-blue-light);
+      border: 1px solid var(--primary-blue-border);
+      color: var(--primary-blue);
+      font-size: 12.5px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 8px rgba(0, 132, 255, 0.08);
+      transition: transform var(--transition-fast);
+      cursor: default;
+    }
 
-.status-pill:hover {
-  transform: scale(1.04);
-  box-shadow: 0 4px 12px rgba(0, 132, 255, 0.18);
-}
+    .status-pill:hover {
+      transform: scale(1.03);
+    }
 
-.status-dot {
-  width: 8px;
-  height: 8px;
-  background: #10B981;
-  border-radius: 50%;
-  position: relative;
-}
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #10B981;
+      border-radius: 50%;
+      position: relative;
+      flex-shrink: 0;
+    }
 
-.status-dot::after {
-  content: "";
-  position: absolute;
-  top: -2px; left: -2px;
-  width: 12px; height: 12px;
-  border-radius: 50%;
-  background: rgba(16, 185, 129, 0.45);
-  animation: pulseDot 2s infinite;
-}
+    .status-dot::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.45);
+      animation: pulseDot 2s infinite;
+    }
 
-@keyframes pulseDot {
-  0% { transform: scale(0.8); opacity: 1; }
-  100% { transform: scale(2.3); opacity: 0; }
-}
+    @keyframes pulseDot {
+      0% {
+        transform: scale(0.8);
+        opacity: 1;
+      }
 
-@keyframes slideDownFade {
-  0% { opacity: 0; transform: translateY(-16px) scale(0.92); }
-  100% { opacity: 1; transform: translateY(0) scale(1); }
-}
+      100% {
+        transform: scale(2.2);
+        opacity: 0;
+      }
+    }
 
-/* ==========================================================================
-   Typography & Feature Badges
+    /* Typography */
+    h1 {
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--navy) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+
+    [data-theme="dark"] h1 {
+      background: linear-gradient(135deg, #FFFFFF 0%, #7CB9FF 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .bio {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+
+    .slogan-translated {
+      display: inline-block;
+      margin-top: 5px;
+      color: var(--primary-blue);
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    /* Features Highlights Pills */
+    .highlights-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .highlight-chip {
+      background: var(--subtle-pill-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-secondary);
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* ==========================================================================
+   Vehicle Showcase Carousel (Optimized for Touch & Drag)
    ========================================================================== */
-h1 {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  background: linear-gradient(135deg, #0084FF 0%, #082142 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 8px;
-  animation: textSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both;
-}
+    .gallery-section {
+      margin: 18px 0 22px 0;
+      text-align: left;
+    }
 
-.bio {
-  color: var(--text-secondary);
-  font-size: 14.5px;
-  line-height: 1.6;
-  margin-bottom: 22px;
-  animation: textSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both;
-}
+    [dir="rtl"] .gallery-section {
+      text-align: right;
+    }
 
-.slogan-translated {
-  display: inline-block;
-  margin-top: 6px;
-  color: var(--primary-blue);
-  font-weight: 600;
-  font-size: 13.5px;
-}
+    .gallery-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 0 4px;
+    }
 
-@keyframes textSlideUp {
-  0% { opacity: 0; transform: translateY(18px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
+    .gallery-title {
+      font-size: 12.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
 
-/* ==========================================================================
-   Vehicle Showcase Carousel
+    .gallery-hint {
+      font-size: 11px;
+      color: var(--primary-blue);
+      font-weight: 700;
+      background: var(--primary-blue-light);
+      padding: 3px 8px;
+      border-radius: 12px;
+    }
+
+    .scroll-wrapper {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+      background: var(--scroll-bg);
+      padding: 10px 8px;
+      border: 1px solid var(--card-border);
+      box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.03);
+      cursor: grab;
+      user-select: none;
+      touch-action: pan-y pinch-zoom;
+    }
+
+    .scroll-wrapper:active {
+      cursor: grabbing;
+    }
+
+    .scroll-wrapper::before,
+    .scroll-wrapper::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 24px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .scroll-wrapper::before {
+      left: 0;
+      background: linear-gradient(90deg, var(--scroll-bg) 0%, transparent 100%);
+    }
+
+    .scroll-wrapper::after {
+      right: 0;
+      background: linear-gradient(-90deg, var(--scroll-bg) 0%, transparent 100%);
+    }
+
+    .scroll-track {
+      display: flex;
+      gap: 12px;
+      animation: scrollTrack 24s linear infinite;
+      will-change: transform;
+    }
+
+    .scroll-wrapper.is-paused .scroll-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes scrollTrack {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes scrollTrackRTL {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(50%);
+      }
+    }
+
+    [dir="rtl"] .scroll-track {
+      animation-name: scrollTrackRTL;
+    }
+
+    .car-card-item {
+      flex: 0 0 auto;
+      width: 175px;
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1.5px solid var(--btn-border);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      cursor: pointer;
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+      text-align: left;
+    }
+
+    [dir="rtl"] .car-card-item {
+      text-align: right;
+    }
+
+    .car-card-item:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 10px 22px rgba(0, 110, 240, 0.22);
+      border-color: var(--primary-blue);
+    }
+
+    .car-img-wrap {
+      width: 100%;
+      height: 112px;
+      background: #E2ECF8;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .car-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .car-card-item:hover .car-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    .car-meta-bar {
+      padding: 8px 10px;
+    }
+
+    .car-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-primary);
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .car-feature {
+      font-size: 11px;
+      color: var(--primary-blue);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 3px;
+    }
+
+    .car-btn-pill {
+      background: var(--primary-blue-light);
+      color: var(--primary-blue);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 8px;
+    }
+
+    /* ==========================================================================
+   Action Cards (Links Stack)
    ========================================================================== */
-.gallery-section {
-  margin: 22px 0 24px 0;
-  text-align: left;
-  animation: textSlideUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.85s both;
-}
+    .actions-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin: 16px 0;
+    }
 
-.gallery-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  padding: 0 4px;
-}
+    .action-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px 16px;
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      background: var(--btn-bg);
+      border: 1px solid var(--btn-border);
+      box-shadow: var(--btn-shadow);
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.28s ease,
+        border-color 0.28s ease;
+      position: relative;
+      overflow: hidden;
+    }
 
-.gallery-title {
-  font-size: 12.5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: var(--navy);
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
+    .action-card:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: var(--btn-hover-shadow);
+      border-color: var(--primary-blue);
+    }
 
-.gallery-title svg {
-  transition: transform 0.3s ease;
-}
-.gallery-section:hover .gallery-title svg {
-  transform: scale(1.15) rotate(-5deg);
-}
+    .action-card:active {
+      transform: translateY(-1px) scale(0.985);
+    }
 
-.gallery-hint {
-  font-size: 11.5px;
-  color: var(--primary-blue);
-  font-weight: 600;
-}
+    .action-card-left {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      text-align: left;
+      min-width: 0;
+      flex: 1;
+    }
 
-.scroll-wrapper {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  position: relative;
-  background: #EEF5FC;
-  padding: 10px;
-  border: 1px solid rgba(0, 132, 255, 0.14);
-  box-shadow: inset 0 2px 8px rgba(8, 33, 66, 0.04);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
+    [dir="rtl"] .action-card-left {
+      text-align: right;
+    }
 
-.scroll-wrapper:hover {
-  border-color: rgba(0, 132, 255, 0.3);
-  box-shadow: inset 0 2px 10px rgba(0, 132, 255, 0.08);
-}
+    .action-card-right-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
 
-.scroll-wrapper::before,
-.scroll-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 25px;
-  z-index: 2;
-  pointer-events: none;
-}
+    .icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 13px;
+      background: var(--primary-blue-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
 
-.scroll-wrapper::before {
-  left: 0;
-  background: linear-gradient(90deg, #EEF5FC 0%, transparent 100%);
-}
+    .action-card:hover .icon-box {
+      transform: scale(1.12) rotate(2deg);
+    }
 
-.scroll-wrapper::after {
-  right: 0;
-  background: linear-gradient(-90deg, #EEF5FC 0%, transparent 100%);
-}
+    [dir="rtl"] .action-card:hover .icon-box {
+      transform: scale(1.12) rotate(-2deg);
+    }
 
-.scroll-track {
-  display: flex;
-  gap: 12px;
-  animation: scroll 22s linear infinite;
-  will-change: transform;
-}
+    /* Brand specific icon box styles */
+    .icon-wa {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.38);
+    }
 
-.scroll-wrapper:hover .scroll-track {
-  animation-play-state: paused;
-}
+    .icon-phone {
+      background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.38);
+    }
 
-.scroll-track img {
-  height: 115px;
-  width: 170px;
-  border-radius: var(--radius-md);
-  flex: 0 0 auto;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, border-color 0.3s ease;
-  border: 2px solid #FFFFFF;
-  box-shadow: 0 4px 12px rgba(8, 33, 66, 0.08);
-}
+    .icon-site {
+      background: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(0, 100, 220, 0.35);
+      border: 2px solid #FFFFFF;
+      padding: 2px;
+    }
 
-.scroll-track img:hover {
-  transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 10px 24px rgba(0, 110, 240, 0.3);
-  border-color: var(--primary-blue);
-}
+    .icon-site img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 9px;
+      display: block;
+    }
 
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+    .icon-play {
+      background: #000000;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    }
 
-/* ==========================================================================
-   Action Cards (Links) with Vector Brand Icons
+    [data-theme="dark"] .icon-play {
+      background: #0B192E;
+      border-color: rgba(66, 133, 244, 0.4);
+    }
+
+    .action-card:hover .icon-play {
+      box-shadow: 0 6px 18px rgba(66, 133, 244, 0.45);
+    }
+
+    .icon-email {
+      background: linear-gradient(135deg, #EA4335 0%, #D93025 50%, #B31412 100%);
+      box-shadow: 0 4px 14px rgba(234, 67, 53, 0.42);
+    }
+
+    .icon-insta {
+      background: linear-gradient(135deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%);
+      box-shadow: 0 4px 14px rgba(225, 48, 108, 0.38);
+    }
+
+    .icon-tiktok {
+      background: #010101;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    }
+
+    .icon-snap {
+      background: #FFFC00;
+      box-shadow: 0 4px 14px rgba(255, 252, 0, 0.45);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .icon-maps {
+      background: #FFFFFF;
+      border: 1px solid rgba(66, 133, 244, 0.2);
+      box-shadow: 0 4px 14px rgba(66, 133, 244, 0.2);
+    }
+
+    .icon-review {
+      background: #FFFFFF;
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.2);
+    }
+
+    .action-text {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .action-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+
+    .action-subtitle {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.3;
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .action-arrow {
+      color: var(--primary-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s ease;
+    }
+
+    .action-card:hover .action-arrow {
+      transform: translateX(4px);
+    }
+
+    [dir="rtl"] .action-card:hover .action-arrow {
+      transform: translateX(-4px) rotate(180deg);
+    }
+
+    [dir="rtl"] .action-arrow svg {
+      transform: rotate(180deg);
+    }
+
+    /* Quick Copy Mini-Button on Action Cards */
+    .mini-copy-btn {
+      background: var(--subtle-pill-bg);
+      border: 1px solid var(--btn-border);
+      color: var(--text-secondary);
+      padding: 5px 8px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .mini-copy-btn:hover {
+      background: var(--primary-blue);
+      color: #FFFFFF;
+      border-color: var(--primary-blue);
+      transform: scale(1.05);
+    }
+
+    .mini-copy-btn svg {
+      width: 13px;
+      height: 13px;
+    }
+
+    /* Featured WhatsApp Card */
+    .action-card.featured-wa {
+      background: linear-gradient(135deg, var(--btn-bg) 0%, var(--wa-green-bg) 100%);
+      border: 1.5px solid var(--wa-green-border);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.16);
+      animation: waPulseGlow 3.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes waPulseGlow {
+      0% {
+        box-shadow: 0 6px 18px rgba(37, 211, 102, 0.16);
+        border-color: rgba(37, 211, 102, 0.28);
+      }
+
+      100% {
+        box-shadow: 0 10px 28px rgba(37, 211, 102, 0.32);
+        border-color: rgba(37, 211, 102, 0.6);
+      }
+    }
+
+    .action-card.featured-wa:hover {
+      border-color: var(--wa-green);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.28);
+    }
+
+    .action-card.featured-wa .action-arrow {
+      color: var(--wa-green);
+    }
+
+    /* Featured Phone Card */
+    .action-card.featured-phone {
+      background: linear-gradient(135deg, var(--btn-bg) 0%, var(--phone-blue-bg) 100%);
+      border: 1.5px solid var(--phone-blue-border);
+    }
+
+    .action-card.featured-phone:hover {
+      border-color: var(--phone-blue);
+      box-shadow: 0 12px 30px rgba(2, 132, 199, 0.25);
+    }
+
+    .action-card.featured-phone .action-arrow {
+      color: var(--phone-blue);
+    }
+
+    /* Featured Site Card (Fluid Royal Blue Flow) */
+    .action-card.featured-site {
+      background: linear-gradient(135deg, #0084FF 0%, #0060CE 45%, #0045A8 85%, #0084FF 100%);
+      background-size: 200% 200%;
+      border: 1px solid #0056B3;
+      box-shadow: 0 8px 24px rgba(0, 132, 255, 0.26);
+      animation: gradientFlow 6s ease infinite alternate;
+    }
+
+    @keyframes gradientFlow {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .action-card.featured-site .action-title,
+    .action-card.featured-site .action-subtitle,
+    .action-card.featured-site .action-arrow {
+      color: #FFFFFF;
+    }
+
+    .action-card.featured-site .action-subtitle {
+      opacity: 0.92;
+    }
+
+    .action-card.featured-site:hover {
+      box-shadow: 0 14px 34px rgba(0, 132, 255, 0.42);
+    }
+
+    /* Google Reviews Stars */
+    .star-rating {
+      color: #F59E0B;
+      font-size: 11px;
+      letter-spacing: 1px;
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    [dir="rtl"] .star-rating {
+      margin-right: 0;
+      margin-left: 4px;
+    }
+
+    /* ==========================================================================
+   Mobile App Download Showcase (Android + iOS Coming Soon)
    ========================================================================== */
-.actions-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin: 18px 0;
-}
+    .app-showcase-card {
+      background: var(--btn-bg);
+      border: 1.5px solid var(--btn-border);
+      border-radius: var(--radius-lg);
+      padding: 14px 16px;
+      box-shadow: var(--btn-shadow);
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.28s ease,
+        border-color 0.28s ease;
+      position: relative;
+      overflow: hidden;
+    }
 
-.action-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 18px;
-  border-radius: var(--radius-lg);
-  text-decoration: none;
-  background: var(--btn-bg);
-  border: 1px solid var(--btn-border);
-  box-shadow: var(--btn-shadow);
-  transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.32s ease,
-              border-color 0.32s ease;
-  position: relative;
-  overflow: hidden;
-  animation: cardCascade 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
+    [data-theme="light"] .app-showcase-card {
+      background: linear-gradient(145deg, #FFFFFF 0%, #F5F9FF 100%);
+      border-color: rgba(0, 132, 255, 0.22);
+      box-shadow: 0 8px 24px rgba(0, 132, 255, 0.08), 0 2px 8px rgba(8, 33, 66, 0.04);
+    }
 
-.action-card:nth-child(1) { animation-delay: 0.92s; }
-.action-card:nth-child(2) { animation-delay: 0.99s; }
-.action-card:nth-child(3) { animation-delay: 1.06s; }
-.action-card:nth-child(4) { animation-delay: 1.13s; }
-.action-card:nth-child(5) { animation-delay: 1.20s; }
-.action-card:nth-child(6) { animation-delay: 1.27s; }
-.action-card:nth-child(7) { animation-delay: 1.34s; }
-.action-card:nth-child(8) { animation-delay: 1.41s; }
+    [data-theme="dark"] .app-showcase-card {
+      background: linear-gradient(145deg, rgba(16, 27, 46, 0.95) 0%, rgba(12, 21, 37, 0.98) 100%);
+      border-color: rgba(0, 132, 255, 0.32);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 20px rgba(0, 132, 255, 0.08);
+    }
 
-@keyframes cardCascade {
-  0% { opacity: 0; transform: translateY(22px) scale(0.97); }
-  100% { opacity: 1; transform: translateY(0) scale(1); }
-}
+    .app-showcase-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary-blue);
+      box-shadow: 0 12px 30px rgba(0, 132, 255, 0.18);
+    }
 
-/* Shimmer Light Reflection Sweep */
-.action-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -120%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.75), transparent);
-  transform: skewX(-20deg);
-  pointer-events: none;
-}
+    .app-showcase-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      gap: 8px;
+    }
 
-.action-card:hover::after {
-  left: 140%;
-  transition: left 0.75s ease;
-}
+    .app-showcase-title-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      text-align: left;
+    }
 
-.action-card:hover {
-  transform: translateY(-4px) scale(1.012);
-  box-shadow: var(--btn-hover-shadow);
-  border-color: var(--primary-blue);
-}
+    [dir="rtl"] .app-showcase-title-group {
+      text-align: right;
+    }
 
-.action-card:active {
-  transform: translateY(-1px) scale(0.985);
-  transition: transform 0.1s ease;
-}
+    .app-showcase-icon-badge {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(0, 132, 255, 0.12) 0%, rgba(0, 102, 204, 0.22) 100%);
+      color: var(--primary-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(0, 132, 255, 0.22);
+    }
 
-.action-card-left {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-align: left;
-}
+    [data-theme="dark"] .app-showcase-icon-badge {
+      background: linear-gradient(135deg, rgba(0, 132, 255, 0.2) 0%, rgba(0, 102, 204, 0.35) 100%);
+      color: #60A5FA;
+      border-color: rgba(96, 165, 250, 0.35);
+    }
 
-/* Modern Vector Icon Box */
-.icon-box {
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  background: #F0F6FD;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
-  position: relative;
-  overflow: hidden;
-}
+    .app-showcase-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.25;
+    }
 
-.icon-box svg {
-  display: block;
-}
+    .app-showcase-sub {
+      font-size: 10.5px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      margin-top: 1px;
+    }
 
-.action-card:hover .icon-box {
-  transform: scale(1.15) rotate(3deg);
-}
+    .app-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      background: rgba(16, 185, 129, 0.12);
+      color: #059669;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      flex-shrink: 0;
+    }
 
-/* Individual Brand Badge Styles */
-.icon-wa {
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.38);
-}
-.action-card:hover .icon-wa {
-  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.55);
-}
+    [data-theme="dark"] .app-badge-pill {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34D399;
+      border-color: rgba(52, 211, 153, 0.35);
+    }
 
-.icon-site {
-  background: #FFFFFF;
-  box-shadow: 0 4px 14px rgba(0, 100, 220, 0.35);
-  border: 2px solid #FFFFFF;
-  padding: 2px;
-}
-.icon-site img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-}
-.action-card:hover .icon-site {
-  box-shadow: 0 6px 20px rgba(0, 132, 255, 0.55);
-}
+    .app-pulse-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #10B981;
+      box-shadow: 0 0 6px #10B981;
+      animation: pulseDot 2s ease infinite;
+    }
 
-.icon-email {
-  background: linear-gradient(135deg, #EA4335 0%, #D93025 50%, #B31412 100%);
-  box-shadow: 0 4px 14px rgba(234, 67, 53, 0.42);
-  border: none;
-}
-.action-card:hover .icon-email {
-  box-shadow: 0 6px 20px rgba(234, 67, 53, 0.6);
-}
+    @keyframes pulseDot {
+      0% {
+        transform: scale(0.9);
+        opacity: 0.8;
+      }
 
-.icon-insta {
-  background: linear-gradient(135deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%);
-  box-shadow: 0 4px 14px rgba(225, 48, 108, 0.38);
-}
-.action-card:hover .icon-insta {
-  box-shadow: 0 6px 20px rgba(225, 48, 108, 0.55);
-}
+      50% {
+        transform: scale(1.25);
+        opacity: 1;
+        box-shadow: 0 0 10px #10B981;
+      }
 
-.icon-tiktok {
-  background: #010101;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-}
-.action-card:hover .icon-tiktok {
-  box-shadow: 0 6px 18px rgba(37, 244, 238, 0.35);
-}
+      100% {
+        transform: scale(0.9);
+        opacity: 0.8;
+      }
+    }
 
-.icon-snap {
-  background: #FFFC00;
-  box-shadow: 0 4px 14px rgba(255, 252, 0, 0.45);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}
-.action-card:hover .icon-snap {
-  box-shadow: 0 6px 20px rgba(255, 252, 0, 0.65);
-}
+    .app-stores-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      width: 100%;
+    }
 
-.icon-maps {
-  background: #FFFFFF;
-  border: 1px solid rgba(66, 133, 244, 0.2);
-  box-shadow: 0 4px 14px rgba(66, 133, 244, 0.2);
-}
-.action-card:hover .icon-maps {
-  box-shadow: 0 6px 18px rgba(66, 133, 244, 0.35);
-}
+    @media (max-width: 330px) {
+      .app-stores-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
-.icon-review {
-  background: #FFFFFF;
-  border: 1px solid rgba(245, 158, 11, 0.25);
-  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.2);
-}
-.action-card:hover .icon-review {
-  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.38);
-}
+    .store-btn {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 9px 11px;
+      border-radius: 12px;
+      text-decoration: none;
+      background: linear-gradient(145deg, #181E29 0%, #0D121B 100%);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      font-family: inherit;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+      min-height: 48px;
+      text-align: left;
+    }
 
-.action-text {
-  display: flex;
-  flex-direction: column;
-}
+    [dir="rtl"] .store-btn {
+      text-align: right;
+    }
 
-.action-title {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--navy);
-  line-height: 1.3;
-}
+    .store-btn:active {
+      transform: scale(0.98);
+    }
 
-.action-subtitle {
-  font-size: 12px;
-  color: var(--text-secondary);
-  line-height: 1.3;
-  margin-top: 2px;
-}
+    .store-btn-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
 
-.action-arrow {
-  color: var(--primary-blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
+    .store-btn-body {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      flex: 1;
+    }
 
-.action-card:hover .action-arrow {
-  transform: translateX(6px);
-}
+    .store-btn-sub {
+      font-size: 8.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
-/* WhatsApp Featured Card */
-.action-card.featured-wa {
-  background: linear-gradient(135deg, #FFFFFF 0%, #F3FBF6 100%);
-  border: 1.5px solid var(--wa-green-border);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.14);
-  animation: cardCascade 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.92s both,
-             waBreathingGlow 3.6s ease-in-out infinite alternate 1.6s;
-}
+    .store-btn-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.25;
+      margin-top: 1px;
+      letter-spacing: -0.2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
-@keyframes waBreathingGlow {
-  0% {
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.14);
-    border-color: rgba(37, 211, 102, 0.25);
-  }
-  100% {
-    box-shadow: 0 10px 28px rgba(37, 211, 102, 0.32);
-    border-color: rgba(37, 211, 102, 0.55);
-  }
-}
+    .store-btn-arrow {
+      margin-left: auto;
+      color: rgba(255, 255, 255, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
 
-.action-card.featured-wa:hover {
-  border-color: var(--wa-green);
-  box-shadow: 0 14px 34px rgba(37, 211, 102, 0.28);
-}
+    [dir="rtl"] .store-btn-arrow {
+      margin-left: 0;
+      margin-right: auto;
+      transform: rotate(180deg);
+    }
 
-.action-card.featured-wa .icon-box.icon-wa {
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-  border: none;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.42);
-}
+    .store-btn-play:hover {
+      transform: translateY(-2px);
+      border-color: rgba(66, 133, 244, 0.7);
+      box-shadow: 0 6px 18px rgba(66, 133, 244, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
 
-.action-card.featured-wa .action-arrow {
-  color: var(--wa-green);
-}
+    .store-btn-play:hover .store-btn-arrow {
+      color: #4285F4;
+      transform: translateX(2px);
+    }
 
-/* Featured Site Card (Flowing Gradient Wave) */
-.action-card.featured-site {
-  background: linear-gradient(135deg, #0084FF 0%, #0060CE 40%, #0045A8 75%, #0084FF 100%);
-  background-size: 250% 250%;
-  border: 1px solid #0056B3;
-  box-shadow: 0 8px 24px rgba(0, 132, 255, 0.28);
-  animation: cardCascade 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.99s both,
-             gradientFlow 6s ease infinite alternate 1.7s;
-}
+    [dir="rtl"] .store-btn-play:hover .store-btn-arrow {
+      transform: rotate(180deg) translateX(2px);
+    }
 
-@keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
+    /* iOS Store Button with Coming Soon Badge */
+    .store-btn-ios {
+      position: relative;
+      background: linear-gradient(145deg, #1A1F2C 0%, #0F141F 100%);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
 
-.action-card.featured-site .action-title,
-.action-card.featured-site .action-subtitle,
-.action-card.featured-site .action-arrow {
-  color: #FFFFFF;
-}
+    .store-btn-ios:hover {
+      transform: translateY(-2px);
+      border-color: rgba(168, 85, 247, 0.6);
+      box-shadow: 0 6px 18px rgba(168, 85, 247, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
 
-.action-card.featured-site .action-subtitle {
-  opacity: 0.92;
-}
+    .coming-soon-ribbon {
+      position: absolute;
+      top: 0;
+      right: 8px;
+      font-size: 8px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 1.5px 6px;
+      border-radius: 0 0 6px 6px;
+      background: linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%);
+      color: #FFFFFF;
+      box-shadow: 0 2px 6px rgba(236, 72, 153, 0.4);
+      line-height: 1.2;
+    }
 
-.action-card.featured-site .icon-box.icon-site {
-  background: #FFFFFF;
-  border: 2.5px solid #FFFFFF;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
-  padding: 3px;
-}
+    [dir="rtl"] .coming-soon-ribbon {
+      right: auto;
+      left: 8px;
+    }
 
-.action-card.featured-site:hover {
-  box-shadow: 0 16px 36px rgba(0, 132, 255, 0.44);
-}
+    .store-btn-status {
+      margin-left: auto;
+      color: #F472B6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      opacity: 0.9;
+    }
 
-/* Review Card Gold Stars */
-.star-rating {
-  color: #F59E0B;
-  font-size: 11.5px;
-  letter-spacing: 1px;
-  display: inline-block;
-}
+    [dir="rtl"] .store-btn-status {
+      margin-left: 0;
+      margin-right: auto;
+    }
 
-.star-rating span {
-  display: inline-block;
-  transition: transform 0.25s ease, color 0.25s ease;
-}
+    @keyframes btnWiggle {
 
-.action-card:hover .star-rating span {
-  animation: starTwinkle 0.45s ease infinite alternate;
-}
+      0%,
+      100% {
+        transform: translateX(0);
+      }
 
-.action-card:hover .star-rating span:nth-child(1) { animation-delay: 0.05s; }
-.action-card:hover .star-rating span:nth-child(2) { animation-delay: 0.12s; }
-.action-card:hover .star-rating span:nth-child(3) { animation-delay: 0.19s; }
-.action-card:hover .star-rating span:nth-child(4) { animation-delay: 0.26s; }
-.action-card:hover .star-rating span:nth-child(5) { animation-delay: 0.33s; }
+      20%,
+      60% {
+        transform: translateX(-4px);
+      }
 
-@keyframes starTwinkle {
-  0% { transform: scale(1) translateY(0); color: #F59E0B; }
-  100% { transform: scale(1.3) translateY(-2px); color: #FBBF24; text-shadow: 0 0 8px rgba(245, 158, 11, 0.6); }
-}
+      40%,
+      80% {
+        transform: translateX(4px);
+      }
+    }
 
-/* ==========================================================================
-   Map Section
+    .btn-wiggle {
+      animation: btnWiggle 0.5s ease-in-out;
+    }
+
+    /* ==========================================================================
+   Interactive Map Section & Travel Quick Chips
    ========================================================================== */
-.map-wrapper {
-  margin-top: 24px;
-  text-align: left;
-  animation: textSlideUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 1.48s both;
-}
+    .map-wrapper {
+      margin-top: 22px;
+      text-align: left;
+    }
 
-.map-header {
-  font-size: 12.5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: var(--navy);
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  padding: 0 4px;
-}
+    [dir="rtl"] .map-wrapper {
+      text-align: right;
+    }
 
-.map-header svg {
-  transition: transform 0.3s ease;
-}
-.map-wrapper:hover .map-header svg {
-  transform: translateY(-2px) scale(1.2);
-}
+    .map-header {
+      font-size: 12.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 4px;
+    }
 
-.map-container {
-  width: 100%;
-  height: 230px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid rgba(0, 132, 255, 0.16);
-  box-shadow: 0 6px 18px rgba(8, 33, 66, 0.06);
-  background: #EAF2FB;
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
-}
+    .map-apps-chips {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
 
-.map-container:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(0, 132, 255, 0.16);
-  border-color: var(--primary-blue);
-}
+    .map-chip {
+      background: var(--btn-bg);
+      border: 1px solid var(--btn-border);
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+    }
 
-/* ==========================================================================
-   Share Button & Footer
+    .map-chip:hover {
+      transform: translateY(-2px);
+      border-color: var(--primary-blue);
+      color: var(--primary-blue);
+    }
+
+    .map-container {
+      width: 100%;
+      height: 220px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      background: #EAF2FB;
+      position: relative;
+    }
+
+    [data-theme="dark"] .map-container {
+      background: #0E1D33;
+    }
+
+    .map-facade-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 50% 50%, var(--btn-bg) 0%, var(--scroll-bg) 100%);
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .map-load-btn {
+      background: var(--primary-blue);
+      color: #FFFFFF;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 4px 14px rgba(0, 132, 255, 0.35);
+      transition: transform var(--transition-fast), background var(--transition-fast);
+    }
+
+    .map-load-btn:hover {
+      transform: scale(1.05);
+      background: var(--primary-blue-dark);
+    }
+
+    /* ==========================================================================
+   Share Section & Bottom CTA
+   ========================================================================= */
+    .share-section {
+      margin-top: 22px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--btn-bg);
+      border: 1px solid var(--primary-blue-border);
+      color: var(--primary-blue);
+      padding: 8px 18px;
+      border-radius: 22px;
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+      box-shadow: 0 2px 8px rgba(0, 100, 220, 0.08);
+    }
+
+    .share-btn:hover {
+      background: var(--primary-blue-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 132, 255, 0.2);
+    }
+
+    .share-btn:active {
+      transform: translateY(0) scale(0.97);
+    }
+
+    footer {
+      color: var(--text-muted);
+      font-size: 12px;
+      margin-top: 22px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+   Floating Quick Action Bar on Mobile
    ========================================================================== */
-.share-section {
-  margin-top: 22px;
-  display: flex;
-  justify-content: center;
-  animation: textSlideUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 1.55s both;
-}
+    .floating-bar {
+      position: fixed;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%) translateY(120px);
+      z-index: 900;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+      border-radius: 36px;
+      padding: 6px 10px;
+      box-shadow: 0 12px 35px rgba(8, 33, 66, 0.25);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
 
-.share-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #FFFFFF;
-  border: 1px solid var(--primary-blue-border);
-  color: var(--primary-blue-dark);
-  padding: 9px 22px;
-  border-radius: 24px;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-              box-shadow 0.3s ease,
-              background 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 100, 220, 0.08);
-  position: relative;
-  overflow: hidden;
-}
+    .floating-bar.visible {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
 
-.share-btn svg {
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
+    .float-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 16px;
+      border-radius: 24px;
+      font-size: 12.5px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform var(--transition-fast);
+    }
 
-.share-btn:hover {
-  background: var(--primary-blue-light);
-  transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 8px 20px rgba(0, 132, 255, 0.22);
-}
+    .float-action-btn:active {
+      transform: scale(0.95);
+    }
 
-.share-btn:hover svg {
-  transform: rotate(20deg) scale(1.15);
-}
+    .float-wa {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+    }
 
-.share-btn:active {
-  transform: translateY(0) scale(0.97);
-}
+    .float-phone {
+      background: var(--primary-blue);
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(0, 132, 255, 0.35);
+    }
 
-/* Toast Feedback with Spring Elastic */
-.toast {
-  position: fixed;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%) translateY(100px) scale(0.85);
-  background: var(--navy);
-  color: #FFFFFF;
-  padding: 12px 24px;
-  border-radius: 30px;
-  font-size: 13.5px;
-  font-weight: 600;
-  box-shadow: 0 12px 34px rgba(8, 33, 66, 0.3);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
-  z-index: 2000;
-}
+    .float-close-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 14px;
+    }
 
-.toast.show {
-  transform: translateX(-50%) translateY(0) scale(1);
-  opacity: 1;
-}
-
-#footer {
-  color: var(--text-muted);
-  font-size: 12px;
-  margin-top: 24px;
-  font-weight: 500;
-  animation: textSlideUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 1.62s both;
-}
-
-/* ==========================================================================
-   Lightbox
+    /* ==========================================================================
+   Modals: Lightbox & QR Code
    ========================================================================== */
-.lightbox {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(8, 33, 66, 0.85);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  cursor: zoom-out;
-  padding: 20px;
-  opacity: 0;
-  transition: opacity 0.35s ease;
-}
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(6, 18, 38, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
 
-.lightbox.active {
-  display: flex;
-  opacity: 1;
-}
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
 
-.lightbox img {
-  max-width: 92%;
-  max-height: 82%;
-  border-radius: 20px;
-  border: 3px solid #FFFFFF;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
-  transform: scale(0.65);
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+    .modal-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-xl);
+      max-width: 480px;
+      width: 100%;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+      transform: scale(0.92) translateY(12px);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      text-align: center;
+    }
 
-.lightbox.active img {
-  transform: scale(1);
-}
+    .modal-overlay.active .modal-card {
+      transform: scale(1) translateY(0);
+    }
 
-.lightbox-close {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 20px;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s ease;
-}
+    .modal-close-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 10;
+      transition: transform var(--transition-fast), background var(--transition-fast);
+    }
 
-/* ==========================================================================
-   Fullscreen Brand Page Loader (Location Algérie)
+    [dir="rtl"] .modal-close-btn {
+      right: auto;
+      left: 14px;
+    }
+
+    .modal-close-btn:hover {
+      transform: scale(1.1);
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Lightbox Specific Details */
+    .lightbox-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      background: #000000;
+      overflow: hidden;
+    }
+
+    .lightbox-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .lightbox-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background var(--transition-fast), transform var(--transition-fast);
+      z-index: 5;
+    }
+
+    .lightbox-nav-btn:hover {
+      background: var(--primary-blue);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .lightbox-prev {
+      left: 10px;
+    }
+
+    .lightbox-next {
+      right: 10px;
+    }
+
+    [dir="rtl"] .lightbox-prev {
+      left: auto;
+      right: 10px;
+    }
+
+    [dir="rtl"] .lightbox-next {
+      right: auto;
+      left: 10px;
+    }
+
+    .lightbox-details {
+      padding: 20px;
+      text-align: left;
+    }
+
+    [dir="rtl"] .lightbox-details {
+      text-align: right;
+    }
+
+    .lightbox-vehicle-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .lightbox-vehicle-tag {
+      color: var(--primary-blue);
+      font-size: 12.5px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .lightbox-specs-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .spec-chip {
+      background: var(--subtle-pill-bg);
+      border: 1px solid var(--btn-border);
+      color: var(--text-secondary);
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+
+    .lightbox-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .lightbox-btn-wa {
+      flex: 1;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: #FFFFFF;
+      border: none;
+      border-radius: 14px;
+      padding: 12px;
+      font-weight: 800;
+      font-size: 13.5px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      transition: transform var(--transition-fast), filter var(--transition-fast);
+    }
+
+    .lightbox-btn-wa:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+    }
+
+    /* QR Code Modal Content */
+    .qr-card-content {
+      padding: 28px 24px;
+    }
+
+    .qr-code-img {
+      width: 200px;
+      height: 200px;
+      margin: 16px auto;
+      border-radius: 16px;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      display: block;
+      background: #FFFFFF;
+      padding: 8px;
+    }
+
+    /* ==========================================================================
+   Toast Notification
    ========================================================================== */
-.page-loader {
-  position: fixed;
-  inset: 0;
-  z-index: 99999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(circle at 50% 40%, #FFFFFF 0%, #F0F6FD 60%, #E3EEFA 100%);
-  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-              visibility 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-              filter 0.65s cubic-bezier(0.16, 1, 0.3, 1);
-  overflow: hidden;
-}
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px) scale(0.9);
+      background: var(--navy);
+      color: #FFFFFF;
+      padding: 11px 22px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+      z-index: 3000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      max-width: calc(100vw - 32px);
+      width: max-content;
+      text-align: center;
+      line-height: 1.35;
+    }
 
-.page-loader.loader-hidden {
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(1.06);
-  filter: blur(8px);
-  pointer-events: none;
-}
+    .toast.show {
+      transform: translateX(-50%) translateY(0) scale(1);
+      opacity: 1;
+    }
 
-.loader-backdrop-glow {
-  position: absolute;
-  width: 520px;
-  height: 520px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 132, 255, 0.18) 0%, rgba(0, 132, 255, 0.05) 50%, transparent 70%);
-  animation: loaderBackdropPulse 3s ease-in-out infinite alternate;
-  pointer-events: none;
-}
+    /* ==========================================================================
+   Smooth Instant Page Loader (Optimized, Non-blocking)
+   ========================================================================== */
+    .page-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+        visibility 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
 
-@keyframes loaderBackdropPulse {
-  0% { transform: scale(0.85); opacity: 0.6; }
-  100% { transform: scale(1.25); opacity: 1; }
-}
+    .page-loader.loader-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
 
-.loader-content {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 24px;
-}
+    .loader-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-.loader-logo-wrap {
-  position: relative;
-  width: 130px;
-  height: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 22px;
-}
+    .loader-spinner {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 3.5px solid var(--primary-blue-border);
+      border-top-color: var(--primary-blue);
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 14px;
+    }
 
-/* Rotating Neon Gradient Orbit Ring */
-.loader-spinner-ring {
-  position: absolute;
-  width: 154px;
-  height: 154px;
-  border-radius: 46px;
-  border: 3px solid rgba(0, 132, 255, 0.14);
-  border-top-color: #0084FF;
-  border-right-color: #00D2FF;
-  animation: loaderOrbit 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite;
-  box-shadow: 0 0 24px rgba(0, 132, 255, 0.28);
-}
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
 
-@keyframes loaderOrbit {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
-/* Pulsing Radial Glow */
-.loader-pulse-glow {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border-radius: 36px;
-  background: radial-gradient(circle, rgba(0, 132, 255, 0.4) 0%, transparent 70%);
-  animation: loaderPulseGlow 1.6s ease-in-out infinite alternate;
-}
+    .loader-text {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.3px;
+    }
 
-@keyframes loaderPulseGlow {
-  0% { transform: scale(0.9); opacity: 0.35; }
-  100% { transform: scale(1.38); opacity: 0.95; }
-}
+    /* Reduced Motion Preference for Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
 
-/* Squircle Logo Container */
-.loader-logo-frame {
-  position: relative;
-  width: 110px;
-  height: 110px;
-  border-radius: 30px;
-  background: #FFFFFF;
-  border: 3.5px solid #FFFFFF;
-  box-shadow: 0 18px 40px rgba(0, 120, 255, 0.28), 0 4px 14px rgba(8, 33, 66, 0.08);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: loaderLogoScale 2.2s ease-in-out infinite alternate;
-}
-
-@keyframes loaderLogoScale {
-  0% { transform: scale(0.96); }
-  100% { transform: scale(1.04); }
-}
-
-.loader-logo-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 26px;
-  display: block;
-}
-
-.loader-logo-sheen {
-  position: absolute;
-  top: 0;
-  left: -140%;
-  width: 70%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.85), transparent);
-  transform: skewX(-22deg);
-  animation: loaderSheen 2.2s ease-in-out infinite;
-}
-
-@keyframes loaderSheen {
-  0%, 30% { left: -140%; }
-  70%, 100% { left: 160%; }
-}
-
-/* Brand Title & Subtitle */
-.loader-title {
-  font-size: 26px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  background: linear-gradient(135deg, #0084FF 0%, #082142 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 5px;
-}
-
-.loader-subtitle {
-  font-size: 13.5px;
-  color: var(--text-secondary);
-  font-weight: 500;
-  letter-spacing: 0.2px;
-  margin-bottom: 20px;
-}
-
-/* Modern Capsule Progress Bar */
-.loader-progress-track {
-  width: 150px;
-  height: 4.5px;
-  background: rgba(0, 132, 255, 0.12);
-  border-radius: 99px;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 12px;
-}
-
-.loader-progress-bar {
-  height: 100%;
-  width: 40%;
-  background: linear-gradient(90deg, #0084FF 0%, #00D2FF 100%);
-  border-radius: 99px;
-  position: absolute;
-  left: 0;
-  animation: loaderBarFlow 1.4s ease-in-out infinite;
-}
-
-@keyframes loaderBarFlow {
-  0% { left: -40%; width: 30%; }
-  50% { width: 60%; }
-  100% { left: 100%; width: 30%; }
-}
-
-/* Status Text with Animated Dots */
-.loader-status {
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  color: var(--text-muted);
-}
-
-.loader-dot-pulse {
-  animation: dotPulse 1.4s infinite;
-  display: inline-block;
-}
-.loader-dot-pulse:nth-child(2) { animation-delay: 0.2s; }
-.loader-dot-pulse:nth-child(3) { animation-delay: 0.4s; }
-.loader-dot-pulse:nth-child(4) { animation-delay: 0.6s; }
-
-@keyframes dotPulse {
-  0%, 20% { opacity: 0; transform: translateY(0); }
-  50% { opacity: 1; transform: translateY(-2px); }
-  80%, 100% { opacity: 0; transform: translateY(0); }
-}
-</style>
+      .scroll-track {
+        animation: none !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Fullscreen Brand Page Loader (Location Algérie) -->
-<div id="page-loader" class="page-loader">
-  <div class="loader-backdrop-glow"></div>
-  <div class="loader-content">
-    <div class="loader-logo-wrap">
-      <div class="loader-spinner-ring"></div>
-      <div class="loader-pulse-glow"></div>
-      <div class="loader-logo-frame">
-        <img src="logo.jpg" alt="Logo Location Algérie" onerror="this.onerror=null; this.src='logo.svg';">
-        <div class="loader-logo-sheen"></div>
+  <!-- Fast Non-blocking Page Loader (Auto-fades in ~200ms or tap to skip) -->
+  <div id="page-loader" class="page-loader" onclick="dismissLoader()">
+    <div class="loader-inner">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">Location Algérie</div>
+    </div>
+  </div>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="bg-orb-1"></div>
+  <div class="bg-orb-2"></div>
+
+  <!-- Lightbox Modal for Vehicles -->
+  <div class="modal-overlay" id="lightbox-modal" onclick="closeLightbox(event)">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeLightbox()" title="Fermer (Échap)">✕</button>
+      <div class="lightbox-img-wrap">
+        <button class="lightbox-nav-btn lightbox-prev" onclick="navigateFleet(-1)" aria-label="Précédent">‹</button>
+        <img id="lightbox-img" src="" alt="Véhicule Location Algérie" loading="eager">
+        <button class="lightbox-nav-btn lightbox-next" onclick="navigateFleet(1)" aria-label="Suivant">›</button>
       </div>
-    </div>
-    <h2 class="loader-title">Location Algérie</h2>
-    <p class="loader-subtitle">Votre agence de location de confiance en Algérie</p>
-    <div class="loader-progress-track">
-      <div class="loader-progress-bar"></div>
-    </div>
-    <div class="loader-status">
-      <span>Chargement</span>
-      <span class="loader-dot-pulse">.</span>
-      <span class="loader-dot-pulse">.</span>
-      <span class="loader-dot-pulse">.</span>
-    </div>
-  </div>
-</div>
-
-<!-- Dynamic Ambient Atmospheric Color Orbs -->
-<div class="bg-orb-1"></div>
-<div class="bg-orb-2"></div>
-<div class="bg-orb-3"></div>
-
-<!-- Lightbox Modal -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <div class="lightbox-close" title="Fermer" onclick="closeLightbox(); event.stopPropagation();">✕</div>
-  <img id="lightbox-img" src="" alt="Véhicule Location Algérie" onclick="event.stopPropagation()">
-</div>
-
-<!-- Toast Feedback -->
-<div class="toast" id="toast"></div>
-
-<!-- Main Card -->
-<div class="container">
-
-  <!-- Logo Section with Start Animation, Glow Rings & Verified Badge -->
-  <div class="logo-wrapper">
-    <div class="logo-pulse-ring"></div>
-    <div class="logo-pulse-ring delay"></div>
-
-    <div class="logo-frame">
-      <img src="logo.jpg" alt="Logo Location Algérie" class="logo" id="brand-logo" onerror="this.onerror=null; this.src='logo.svg';">
-      <div class="logo-sheen"></div>
-    </div>
-
-    <div class="verified-badge" title="Agence Certifiée">
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
-      </svg>
-    </div>
-  </div>
-
-  <!-- Live Status Pill -->
-  <div>
-    <div class="status-pill">
-      <span class="status-dot"></span>
-      <span>Ouvert 7j/7 • Service Réactif</span>
-    </div>
-  </div>
-
-  <!-- Brand Title & Bio -->
-  <h1>Location Algérie</h1>
-  <p class="bio">
-    Votre agence de location de voiture de confiance en Algérie.<br>
-    <span class="slogan-translated">Réservation express • Véhicules récents • Accompagnement 7j/7</span>
-  </p>
-
-  <!-- Vehicle Gallery Ribbon -->
-  <div class="gallery-section">
-    <div class="gallery-header">
-      <span class="gallery-title">
-        <!-- Modern Car Vector SVG -->
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary-blue)">
-          <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C1.4 11.2 1 12 1 13v3c0 .6.4 1 1 1h2"/>
-          <circle cx="7" cy="17" r="2"/>
-          <path d="M9 17h6"/>
-          <circle cx="17" cy="17" r="2"/>
-        </svg>
-        Nos Véhicules Récents
-      </span>
-      <span class="gallery-hint">Cliquez pour agrandir</span>
-    </div>
-
-    <div class="scroll-wrapper">
-      <div class="scroll-track">
-        <img src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Renault%20Clio%20au%20showroom%20Location%20Alg%C3%A9rie.png" alt="Renault Clio - Location Algérie" onclick="openLightbox(this.src)">
-        <img src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Showroom%20Peugeot%20aux%20couleurs%20de%20Location%20Alg%C3%A9rie.png" alt="Peugeot - Location Algérie" onclick="openLightbox(this.src)">
-        <img src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Showroom%20moderne%20avec%20SEAT%20grise.png" alt="SEAT - Location Algérie" onclick="openLightbox(this.src)">
-        <img src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Berline%20Fiat%20dans%20un%20showroom%20moderne.png" alt="Fiat - Location Algérie" onclick="openLightbox(this.src)">
-        <img src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Renault%20Clio%20au%20showroom%20Location%20Alg%C3%A9rie.png" alt="Renault Clio - Location Algérie" onclick="openLightbox(this.src)">
-        <img src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Showroom%20Peugeot%20aux%20couleurs%20de%20Location%20Alg%C3%A9rie.png" alt="Peugeot - Location Algérie" onclick="openLightbox(this.src)">
-        <img src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Showroom%20moderne%20avec%20SEAT%20grise.png" alt="SEAT - Location Algérie" onclick="openLightbox(this.src)">
-        <img src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Berline%20Fiat%20dans%20un%20showroom%20moderne.png" alt="Fiat - Location Algérie" onclick="openLightbox(this.src)">
+      <div class="lightbox-details">
+        <h3 class="lightbox-vehicle-title" id="lightbox-title">Renault Clio 5</h3>
+        <span class="lightbox-vehicle-tag" id="lightbox-tag">Édition Récente • Économique & Confort</span>
+        <div class="lightbox-specs-grid" id="lightbox-specs">
+          <span class="spec-chip">5 Places</span>
+          <span class="spec-chip">Climatisation</span>
+          <span class="spec-chip">Essence</span>
+          <span class="spec-chip">Boîte Manuelle</span>
+        </div>
+        <div class="lightbox-actions">
+          <a class="lightbox-btn-wa" id="lightbox-wa-btn" href="#" target="_blank" rel="noopener noreferrer">
+            <!-- WhatsApp Icon -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.82 12.04 21.82C17.5 21.82 21.96 17.37 21.96 11.91C21.96 6.45 17.5 2 12.04 2Z" />
+            </svg>
+            <span id="lightbox-btn-text">Réserver ce véhicule sur WhatsApp</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Action Links Stack with Official Vector Icons -->
-  <div class="actions-stack">
-
-    <!-- 1. WhatsApp (Dedicated Gradient Badge + Official WhatsApp SVG) -->
-    <a class="action-card featured-wa" id="wa-link" href="https://wa.me/33767691659?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20la%20location%20de%20voiture%20en%20Alg%C3%A9rie." target="_blank" rel="noopener noreferrer">
-      <div class="action-card-left">
-        <div class="icon-box icon-wa">
-          <svg viewBox="0 0 24 24" width="26" height="26" fill="none">
-            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.82 12.04 21.82C17.5 21.82 21.96 17.37 21.96 11.91C21.96 6.45 17.5 2 12.04 2Z" fill="#FFFFFF"/>
-            <path d="M17.47 14.38C17.17 14.23 15.71 13.51 15.44 13.41C15.17 13.31 14.97 13.26 14.77 13.56C14.57 13.86 14 14.53 13.83 14.73C13.66 14.93 13.49 14.95 13.19 14.8C12.89 14.65 11.93 14.34 10.8 13.33C9.92 12.54 9.32 11.57 9.15 11.27C8.98 10.97 9.13 10.81 9.28 10.66C9.41 10.53 9.58 10.32 9.73 10.15C9.88 9.98 9.93 9.86 10.03 9.66C10.13 9.46 10.08 9.29 10.01 9.14C9.93 8.99 9.33 7.53 9.08 6.93C8.84 6.35 8.59 6.43 8.41 6.42C8.24 6.41 8.04 6.41 7.84 6.41C7.64 6.41 7.32 6.48 7.05 6.78C6.78 7.08 6.01 7.8 6.01 9.26C6.01 10.72 7.08 12.13 7.23 12.33C7.38 12.53 9.33 15.53 12.31 16.82C13.02 17.13 13.57 17.31 14 17.45C14.71 17.68 15.36 17.65 15.87 17.57C16.44 17.48 17.63 16.85 17.88 16.15C18.13 15.46 18.13 14.86 18.05 14.73C17.97 14.61 17.77 14.53 17.47 14.38Z" fill="#25D366"/>
-          </svg>
-        </div>
-        <div class="action-text">
-          <span class="action-title">WhatsApp Direct</span>
-          <span class="action-subtitle">+33 7 67 69 16 59 • Devis immédiat 24/7</span>
-        </div>
-      </div>
-      <div class="action-arrow">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </div>
-    </a>
-
-    <!-- 2. Site Officiel (Official Brand Logo Avatar Badge) -->
-    <a class="action-card featured-site" id="site-link" href="https://locationalgerie.fr/" target="_blank" rel="noopener noreferrer">
-      <div class="action-card-left">
-        <div class="icon-box icon-site">
-          <img src="logo.jpg" alt="Logo Location Algérie" onerror="this.onerror=null; this.src='logo.svg';">
-        </div>
-        <div class="action-text">
-          <span class="action-title">Site Officiel</span>
-          <span class="action-subtitle">locationalgerie.fr • Voir toute la flotte</span>
-        </div>
-      </div>
-      <div class="action-arrow">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </div>
-    </a>
-
-    <!-- 3. Email (Official Gmail Badge) -->
-    <a class="action-card" id="email-link" href="mailto:algeria.homerental@gmail.com">
-      <div class="action-card-left">
-        <div class="icon-box icon-email">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="#FFFFFF">
-            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
-          </svg>
-        </div>
-        <div class="action-text">
-          <span class="action-title">Contact par Email</span>
-          <span class="action-subtitle">algeria.homerental@gmail.com</span>
-        </div>
-      </div>
-      <div class="action-arrow">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </div>
-    </a>
-
-    <!-- 4. Instagram (Official Sunset Gradient Badge + White Vector SVG) -->
-    <a class="action-card" id="insta-link" href="https://www.instagram.com/algerie_loc" target="_blank" rel="noopener noreferrer">
-      <div class="action-card-left">
-        <div class="icon-box icon-insta">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5.5" ry="5.5"/>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-          </svg>
-        </div>
-        <div class="action-text">
-          <span class="action-title">Instagram</span>
-          <span class="action-subtitle">@algerie_loc • Photos & actualités</span>
-        </div>
-      </div>
-      <div class="action-arrow">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </div>
-    </a>
-
-    <!-- 5. TikTok (Official Dark App Badge + 3-Color Chromatic SVG) -->
-    <a class="action-card" id="tiktok-link" href="https://www.tiktok.com/@location.algerie0" target="_blank" rel="noopener noreferrer">
-      <div class="action-card-left">
-        <div class="icon-box icon-tiktok">
-          <svg viewBox="0 0 32 32" width="24" height="24">
-            <path fill="#25F4EE" d="M21 7.7a7.2 7.2 0 0 1 4.7 2.6v-1A7.3 7.3 0 0 1 21.5 4.4h-.5v3.3zM15.4 12.3c-.4-.08-.8-.12-1.2-.12a6.8 6.8 0 0 0-6.8 6.8c0 3.2 2.2 5.9 5.2 6.6v-3.1a3.8 3.8 0 0 1-2.2-3.5c0-2.1 1.7-3.8 3.8-3.8.4 0 .8.06 1.2.17v-3.05z"/>
-            <path fill="#FE2C55" d="M25.7 9.3c-.8-.06-1.6-.26-2.4-.6v10.3a6.8 6.8 0 0 1-6.8 6.8 6.7 6.7 0 0 1-3.9-1.2v3.1a6.8 6.8 0 0 0 7.1-1.9 6.8 6.8 0 0 0 1.6-4.9V8.7a7.3 7.3 0 0 0 4.4 2.2v-1.6z"/>
-            <path fill="#FFFFFF" d="M25.7 10.3a7.2 7.2 0 0 1-4.7-2.6V19a6.8 6.8 0 1 1-6.8-6.8c.4 0 .8.04 1.2.12V16a3.8 3.8 0 1 0 2.6 3.6V3h3.5a7.3 7.3 0 0 0 4.2 4.9v2.4z"/>
-          </svg>
-        </div>
-        <div class="action-text">
-          <span class="action-title">TikTok</span>
-          <span class="action-subtitle">@location.algerie0 • Vidéos de nos voitures</span>
-        </div>
-      </div>
-      <div class="action-arrow">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </div>
-    </a>
-
-    <!-- 6. Snapchat (Official Yellow App Badge + Ghost SVG) -->
-    <a class="action-card" id="snap-link" href="https://snapchat.com/t/znQ1jUvp" target="_blank" rel="noopener noreferrer">
-      <div class="action-card-left">
-        <div class="icon-box icon-snap">
-          <svg viewBox="0 0 24 24" width="26" height="26" fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-linejoin="round">
-            <path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/>
-          </svg>
-        </div>
-        <div class="action-text">
-          <span class="action-title">Snapchat</span>
-          <span class="action-subtitle">Stories & coulisses en direct</span>
-        </div>
-      </div>
-      <div class="action-arrow">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </div>
-    </a>
-
-    <!-- 7. Google Maps (Official 4-Color Pin Badge) -->
-    <a class="action-card" id="maps-link" href="https://goo.gl/maps/paNBs9VnmfFhrsESA" target="_blank" rel="noopener noreferrer">
-      <div class="action-card-left">
-        <div class="icon-box icon-maps">
-          <svg viewBox="0 0 24 24" width="26" height="26">
-            <path fill="#4285F4" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-            <path fill="#EA4335" d="M12 2C8.13 2 5 5.13 5 9c0 2.22 1.05 4.7 2.45 7.15L12 9V2z"/>
-            <path fill="#FBBC04" d="M12 9l-4.55 7.15c1.47 2.58 3.32 4.65 4.55 5.85V9z"/>
-            <path fill="#34A853" d="M12 22s5.53-6.14 6.55-10.85L12 9v13z"/>
-            <circle cx="12" cy="9" r="3.2" fill="#FFFFFF"/>
-          </svg>
-        </div>
-        <div class="action-text">
-          <span class="action-title">Localisation & Agence</span>
-          <span class="action-subtitle">36°42'10.8"N 3°12'25.2"E • Itinéraire Google Maps</span>
-        </div>
-      </div>
-      <div class="action-arrow">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </div>
-    </a>
-
-    <!-- 8. Avis Google (Official Google "G" 4-Color Badge) -->
-    <a class="action-card" id="review-link" href="https://g.page/r/CaT9AwQUQlh0EBE/review" target="_blank" rel="noopener noreferrer">
-      <div class="action-card-left">
-        <div class="icon-box icon-review">
-          <svg viewBox="0 0 24 24" width="25" height="25">
-            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
-            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.24v3.15C3.26 21.36 7.34 24 12 24z"/>
-            <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.24C.45 8.16 0 9.97 0 12s.45 3.84 1.24 5.42l4.04-3.15z"/>
-            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.24 6.58l4.04 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
-          </svg>
-        </div>
-        <div class="action-text">
-          <span class="action-title">Laisser un avis Google</span>
-          <span class="action-subtitle">
-            <span class="star-rating">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </span>
-            Partagez votre expérience
-          </span>
-        </div>
-      </div>
-      <div class="action-arrow">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </div>
-    </a>
-
-  </div>
-
-  <!-- Interactive Map Section -->
-  <div class="map-wrapper">
-    <div class="map-header">
-      <div style="display:flex; align-items:center; gap:7px;">
-        <!-- Official Google Pin Vector SVG -->
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary-blue)">
-          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-          <circle cx="12" cy="10" r="3"></circle>
-        </svg>
-        <span>Notre Emplacement en Algérie</span>
-      </div>
-      <a href="https://goo.gl/maps/paNBs9VnmfFhrsESA" target="_blank" rel="noopener noreferrer" style="font-size:11.5px; font-weight:700; color:var(--primary-blue); text-decoration:none; display:inline-flex; align-items:center; gap:4px; transition: color 0.2s ease;">
-        Ouvrir Maps ↗
-      </a>
-    </div>
-    <div class="map-container">
-      <iframe src="https://maps.google.com/maps?q=36.703000,3.207000&hl=fr&z=15&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <!-- QR Code Modal -->
+  <div class="modal-overlay" id="qr-modal" onclick="closeQrModal(event)">
+    <div class="modal-card qr-card-content" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeQrModal()" title="Fermer">✕</button>
+      <h3 style="font-size:18px; font-weight:800; color:var(--text-primary); margin-bottom:4px;" data-i18n="qr_title">
+        Scanner le QR Code</h3>
+      <p style="font-size:12.5px; color:var(--text-secondary);" data-i18n="qr_subtitle">Scannez pour ouvrir le profil
+        Location Algérie sur votre téléphone</p>
+      <img src="qr-code.svg" alt="QR Code Location Algérie" class="qr-code-img">
+      <div style="font-size:12px; font-weight:700; color:var(--primary-blue);">locationalgerie.fr</div>
     </div>
   </div>
 
-  <!-- Quick Share Button -->
-  <div class="share-section">
-    <button class="share-btn" onclick="shareProfile()">
+  <!-- Toast Feedback -->
+  <div class="toast" id="toast">
+    <!-- Checkmark SVG -->
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-text">Lien copié dans le presse-papiers !</span>
+  </div>
+
+  <!-- Floating Quick Action Bar (Mobile) -->
+  <div class="floating-bar" id="floating-bar">
+    <a class="float-action-btn float-wa"
+      href="https://wa.me/33767691659?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20la%20location%20de%20voiture%20en%20Alg%C3%A9rie."
+      target="_blank" rel="noopener noreferrer">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+        <path
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.82 12.04 21.82C17.5 21.82 21.96 17.37 21.96 11.91C21.96 6.45 17.5 2 12.04 2Z" />
       </svg>
-      <span>Partager le profil</span>
-    </button>
+      <span>WhatsApp</span>
+    </a>
+    <a class="float-action-btn float-phone" href="tel:+33767691659">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+      <span data-i18n="float_call">Appeler</span>
+    </a>
+    <button class="float-close-btn" onclick="dismissFloatingBar()" title="Masquer"
+      aria-label="Fermer la barre">✕</button>
   </div>
 
-  <!-- Footer -->
-  <p id="footer">Location Algérie • Tous droits réservés • 2026</p>
+  <!-- Main Bio Container -->
+  <main class="container">
 
-</div>
+    <!-- Top Controls Bar -->
+    <div class="top-header-bar">
+      <div class="top-bar-group">
+        <!-- Language Switcher: FR / AR -->
+        <button class="control-btn" id="lang-btn" onclick="toggleLanguage()" title="Changer de langue / تغيير اللغة"
+          aria-label="Langue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span class="lang-badge" id="lang-text">FR</span>
+        </button>
 
-<script>
-// WhatsApp link with prefilled French message
-const waNumber = "33767691659";
-const waMsg = "Bonjour, je souhaite des informations sur la location de voiture en Algérie.";
-document.getElementById("wa-link").href = "https://wa.me/" + waNumber + "?text=" + encodeURIComponent(waMsg);
+        <!-- QR Code Button -->
+        <button class="control-btn" onclick="openQrModal()" title="Afficher le QR Code" aria-label="QR Code">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <span>QR</span>
+        </button>
+      </div>
 
-// Lightbox functions
-function openLightbox(src) {
-  const lb = document.getElementById('lightbox');
-  const lbImg = document.getElementById('lightbox-img');
-  lbImg.src = src;
-  lb.classList.add('active');
-}
+      <!-- Theme Switcher: Light / Dark -->
+      <div class="top-bar-group">
+        <button class="control-btn" id="theme-btn" onclick="toggleTheme()" title="Basculer le mode sombre / clair"
+          aria-label="Thème sombre ou clair">
+          <svg id="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
 
-function closeLightbox() {
-  const lb = document.getElementById('lightbox');
-  lb.classList.remove('active');
-}
+    <!-- Profile Logo Section with Vector Squircle & Verified Badge -->
+    <div class="logo-wrapper">
+      <div class="logo-pulse-ring"></div>
+      <div class="logo-frame" onclick="openQrModal()" title="Location Algérie">
+        <img src="logo.svg" alt="Logo officiel Location Algérie" class="logo" id="brand-logo"
+          onerror="this.onerror=null; this.src='logo.jpg';" width="125" height="125">
+        <div class="logo-sheen"></div>
+      </div>
+      <div class="verified-badge" title="Agence Certifiée • Service de confiance">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+        </svg>
+      </div>
+    </div>
 
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeLightbox();
-});
+    <!-- Live Status Pill -->
+    <div>
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span data-i18n="status_text">Ouvert 7j/7 • Service Réactif 24h/24</span>
+      </div>
+    </div>
 
-// Share / Copy Profile URL
-function shareProfile() {
-  const pageUrl = window.location.href;
-  const pageTitle = "Location Algérie | locationalgerie.fr";
-  const shareText = "Location Algérie - Votre agence de location de voiture de confiance en Algérie.";
+    <!-- Brand Title & Bio -->
+    <h1 data-i18n="brand_title">Location Algérie</h1>
+    <p class="bio">
+      <span data-i18n="bio_text">Votre agence de location de voiture de confiance en Algérie.</span><br>
+      <span class="slogan-translated" data-i18n="slogan_text">Réservation express • Flotte récente • Prise en charge
+        aéroports</span>
+    </p>
 
-  if (navigator.share) {
-    navigator.share({
-      title: pageTitle,
-      text: shareText,
-      url: pageUrl
-    }).catch(() => {});
-  } else {
-    navigator.clipboard.writeText(pageUrl).then(() => {
-      showToast("Lien copié dans le presse-papiers !");
-    }).catch(() => {
-      showToast("https://locationalgerie.fr/");
+
+    <!-- Vehicle Gallery Showcase Carousel (Touch & Drag Supported) -->
+    <section class="gallery-section">
+      <div class="gallery-header">
+        <span class="gallery-title">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary-blue)">
+            <path
+              d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C1.4 11.2 1 12 1 13v3c0 .6.4 1 1 1h2" />
+            <circle cx="7" cy="17" r="2" />
+            <path d="M9 17h6" />
+            <circle cx="17" cy="17" r="2" />
+          </svg>
+          <span data-i18n="fleet_title">Nos Véhicules Disponibles</span>
+        </span>
+        <span class="gallery-hint" data-i18n="fleet_hint">Toucher pour réserver</span>
+      </div>
+
+      <div class="scroll-wrapper" id="fleet-scroller" title="Glisser ou cliquer pour voir et réserver">
+        <div class="scroll-track" id="fleet-track">
+          <!-- Vehicle 1: Clio 5 -->
+          <div class="car-card-item" onclick="openLightboxByIndex(0)">
+            <div class="car-img-wrap">
+              <img
+                src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Renault%20Clio%20au%20showroom%20Location%20Alg%C3%A9rie.png?tr=w-400,q-80,f-auto"
+                alt="Renault Clio 5 - Location Algérie" width="175" height="112" loading="lazy" decoding="async">
+            </div>
+            <div class="car-meta-bar">
+              <span class="car-name">Renault Clio 5</span>
+              <div class="car-feature">
+                <span data-i18n="car1_badge">Essence • Manuelle</span>
+                <span class="car-btn-pill" data-i18n="book_pill">Réserver</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vehicle 2: Peugeot 208 -->
+          <div class="car-card-item" onclick="openLightboxByIndex(1)">
+            <div class="car-img-wrap">
+              <img
+                src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Showroom%20Peugeot%20aux%20couleurs%20de%20Location%20Alg%C3%A9rie.png?tr=w-400,q-80,f-auto"
+                alt="Peugeot 208 - Location Algérie" width="175" height="112" loading="lazy" decoding="async">
+            </div>
+            <div class="car-meta-bar">
+              <span class="car-name">Peugeot 208</span>
+              <div class="car-feature">
+                <span data-i18n="car2_badge">Confort • Moderne</span>
+                <span class="car-btn-pill" data-i18n="book_pill">Réserver</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vehicle 3: SEAT Ibiza -->
+          <div class="car-card-item" onclick="openLightboxByIndex(2)">
+            <div class="car-img-wrap">
+              <img
+                src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Showroom%20moderne%20avec%20SEAT%20grise.png?tr=w-400,q-80,f-auto"
+                alt="SEAT Ibiza - Location Algérie" width="175" height="112" loading="lazy" decoding="async">
+            </div>
+            <div class="car-meta-bar">
+              <span class="car-name">SEAT Ibiza</span>
+              <div class="car-feature">
+                <span data-i18n="car3_badge">Sport & Urbaine</span>
+                <span class="car-btn-pill" data-i18n="book_pill">Réserver</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vehicle 4: Fiat Tipo Berline -->
+          <div class="car-card-item" onclick="openLightboxByIndex(3)">
+            <div class="car-img-wrap">
+              <img
+                src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Berline%20Fiat%20dans%20un%20showroom%20moderne.png?tr=w-400,q-80,f-auto"
+                alt="Fiat Tipo Berline - Location Algérie" width="175" height="112" loading="lazy" decoding="async">
+            </div>
+            <div class="car-meta-bar">
+              <span class="car-name">Fiat Tipo Berline</span>
+              <div class="car-feature">
+                <span data-i18n="car4_badge">Grand Coffre 520L</span>
+                <span class="car-btn-pill" data-i18n="book_pill">Réserver</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loop duplicates for seamless infinite carousel -->
+          <div class="car-card-item" onclick="openLightboxByIndex(0)">
+            <div class="car-img-wrap">
+              <img
+                src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Renault%20Clio%20au%20showroom%20Location%20Alg%C3%A9rie.png?tr=w-400,q-80,f-auto"
+                alt="Renault Clio 5 - Location Algérie" width="175" height="112" loading="lazy" decoding="async">
+            </div>
+            <div class="car-meta-bar">
+              <span class="car-name">Renault Clio 5</span>
+              <div class="car-feature">
+                <span data-i18n="car1_badge">Essence • Manuelle</span>
+                <span class="car-btn-pill" data-i18n="book_pill">Réserver</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-card-item" onclick="openLightboxByIndex(1)">
+            <div class="car-img-wrap">
+              <img
+                src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Showroom%20Peugeot%20aux%20couleurs%20de%20Location%20Alg%C3%A9rie.png?tr=w-400,q-80,f-auto"
+                alt="Peugeot 208 - Location Algérie" width="175" height="112" loading="lazy" decoding="async">
+            </div>
+            <div class="car-meta-bar">
+              <span class="car-name">Peugeot 208</span>
+              <div class="car-feature">
+                <span data-i18n="car2_badge">Confort • Moderne</span>
+                <span class="car-btn-pill" data-i18n="book_pill">Réserver</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-card-item" onclick="openLightboxByIndex(2)">
+            <div class="car-img-wrap">
+              <img
+                src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Showroom%20moderne%20avec%20SEAT%20grise.png?tr=w-400,q-80,f-auto"
+                alt="SEAT Ibiza - Location Algérie" width="175" height="112" loading="lazy" decoding="async">
+            </div>
+            <div class="car-meta-bar">
+              <span class="car-name">SEAT Ibiza</span>
+              <div class="car-feature">
+                <span data-i18n="car3_badge">Sport & Urbaine</span>
+                <span class="car-btn-pill" data-i18n="book_pill">Réserver</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-card-item" onclick="openLightboxByIndex(3)">
+            <div class="car-img-wrap">
+              <img
+                src="https://ik.imagekit.io/xiubx7d3g/link%20bio/Berline%20Fiat%20dans%20un%20showroom%20moderne.png?tr=w-400,q-80,f-auto"
+                alt="Fiat Tipo Berline - Location Algérie" width="175" height="112" loading="lazy" decoding="async">
+            </div>
+            <div class="car-meta-bar">
+              <span class="car-name">Fiat Tipo Berline</span>
+              <div class="car-feature">
+                <span data-i18n="car4_badge">Grand Coffre 520L</span>
+                <span class="car-btn-pill" data-i18n="book_pill">Réserver</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Action Links Stack -->
+    <section class="actions-stack">
+      <div class="app-showcase-card" id="app-showcase">
+        <div class="app-showcase-header">
+          <div class="app-showcase-title-group">
+            <div class="app-showcase-icon-badge">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="3" ry="3"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="app-showcase-title" data-i18n="app_showcase_title">Application Mobile</div>
+              <div class="app-showcase-sub" data-i18n="app_showcase_sub">Réservez en 1 clic • Disponible 24/7</div>
+            </div>
+          </div>
+          <div class="app-badge-pill">
+            <span class="app-pulse-dot"></span>
+            <span data-i18n="app_badge_live">Officielle</span>
+          </div>
+        </div>
+
+        <div class="app-stores-grid">
+          <!-- Google Play Store (Live) -->
+          <a class="store-btn store-btn-play" id="app-link"
+            href="https://play.google.com/store/apps/details?id=com.parisherb.myapp" target="_blank"
+            rel="noopener noreferrer" aria-label="Télécharger sur Google Play">
+            <div class="store-btn-icon">
+              <!-- Official Google Play 4-Color Vector Triangle -->
+              <svg viewBox="0 0 24 24" width="23" height="23">
+                <path fill="#4285F4"
+                  d="M3.6 1.8c-.3.3-.5.8-.5 1.4v17.6c0 .6.2 1.1.5 1.4l.1.1 9.9-9.9v-.2L3.7 1.7l-.1.1z" />
+                <path fill="#FFBB00"
+                  d="M16.9 15.5l-3.3-3.3v-.4l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.6 0 2.3l-3.9 2.3-.1.1z" />
+                <path fill="#EA4335" d="M13.6 12.2L3.6 22.2c.4.4 1.1.5 1.8.1l11.5-6.5-3.3-3.6z" />
+                <path fill="#34A853" d="M13.6 11.8l3.3-3.6L5.4 1.7C4.7 1.3 4 1.4 3.6 1.8l10 10z" />
+              </svg>
+            </div>
+            <div class="store-btn-body">
+              <span class="store-btn-sub" data-i18n="play_store_sub">Disponible sur</span>
+              <span class="store-btn-name">Google Play</span>
+            </div>
+            <div class="store-btn-arrow">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Apple App Store (Coming Soon) -->
+          <button type="button" class="store-btn store-btn-ios" id="app-ios-btn" onclick="notifyIosComingSoon(event)"
+            aria-label="Application iOS bientôt disponible sur l'App Store">
+            <span class="coming-soon-ribbon" data-i18n="coming_soon_tag">Bientôt</span>
+            <div class="store-btn-icon">
+              <!-- Official Apple Vector Silhouette -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#FFFFFF">
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.87-.9.04-2 .6-2.63 1.35-.56.64-.99 1.7-0.87 2.73 1.01.08 2-.48 2.58-1.21z" />
+              </svg>
+            </div>
+            <div class="store-btn-body">
+              <span class="store-btn-sub" data-i18n="app_store_sub">Bientôt sur</span>
+              <span class="store-btn-name">App Store</span>
+            </div>
+            <div class="store-btn-status">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- 1. WhatsApp Direct (Featured VIP Card) -->
+      <a class="action-card featured-wa" id="wa-link"
+        href="https://wa.me/33767691659?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20la%20location%20de%20voiture%20en%20Alg%C3%A9rie."
+        target="_blank" rel="noopener noreferrer">
+        <div class="action-card-left">
+          <div class="icon-box icon-wa">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.82 12.04 21.82C17.5 21.82 21.96 17.37 21.96 11.91C21.96 6.45 17.5 2 12.04 2Z"
+                fill="#FFFFFF" />
+              <path
+                d="M17.47 14.38C17.17 14.23 15.71 13.51 15.44 13.41C15.17 13.31 14.97 13.26 14.77 13.56C14.57 13.86 14 14.53 13.83 14.73C13.66 14.93 13.49 14.95 13.19 14.8C12.89 14.65 11.93 14.34 10.8 13.33C9.92 12.54 9.32 11.57 9.15 11.27C8.98 10.97 9.13 10.81 9.28 10.66C9.41 10.53 9.58 10.32 9.73 10.15C9.88 9.98 9.93 9.86 10.03 9.66C10.13 9.46 10.08 9.29 10.01 9.14C9.93 8.99 9.33 7.53 9.08 6.93C8.84 6.35 8.59 6.43 8.41 6.42C8.24 6.41 8.04 6.41 7.84 6.41C7.64 6.41 7.32 6.48 7.05 6.78C6.78 7.08 6.01 7.8 6.01 9.26C6.01 10.72 7.08 12.13 7.23 12.33C7.38 12.53 9.33 15.53 12.31 16.82C13.02 17.13 13.57 17.31 14 17.45C14.71 17.68 15.36 17.65 15.87 17.57C16.44 17.48 17.63 16.85 17.88 16.15C18.13 15.46 18.13 14.86 18.05 14.73C17.97 14.61 17.77 14.53 17.47 14.38Z"
+                fill="#25D366" />
+            </svg>
+          </div>
+          <div class="action-text">
+            <span class="action-title" data-i18n="wa_title">WhatsApp Direct</span>
+            <span class="action-subtitle" data-i18n="wa_sub">+33 7 67 69 16 59 • Devis immédiat 24/7</span>
+          </div>
+        </div>
+        <div class="action-card-right-group">
+          <button class="mini-copy-btn" onclick="copyPhone(event)" title="Copier le numéro"
+            aria-label="Copier le numéro">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span data-i18n="copy_btn">Copier</span>
+          </button>
+          <div class="action-arrow">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Direct Phone Call (New Essential CTA for fast conversions) -->
+      <a class="action-card featured-phone" id="phone-link" href="tel:+33767691659">
+        <div class="action-card-left">
+          <div class="icon-box icon-phone">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#FFFFFF" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </div>
+          <div class="action-text">
+            <span class="action-title" data-i18n="phone_title">Appel Téléphonique Direct</span>
+            <span class="action-subtitle" data-i18n="phone_sub">+33 7 67 69 16 59 • Service Client 7j/7</span>
+          </div>
+        </div>
+        <div class="action-arrow">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- 3. Site Web Officiel -->
+      <a class="action-card featured-site" id="site-link" href="https://locationalgerie.fr/" target="_blank"
+        rel="noopener noreferrer">
+        <div class="action-card-left">
+          <div class="icon-box icon-site">
+            <img src="logo.svg" alt="Logo Location Algérie" onerror="this.onerror=null; this.src='logo.jpg';" width="38"
+              height="38">
+          </div>
+          <div class="action-text">
+            <span class="action-title" data-i18n="site_title">Site Web Officiel</span>
+            <span class="action-subtitle" data-i18n="site_sub">locationalgerie.fr • Voir toute la flotte & tarifs</span>
+          </div>
+        </div>
+        <div class="action-arrow">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+
+
+      <!-- 5. Contact Email -->
+      <a class="action-card" id="email-link" href="mailto:algeria.homerental@gmail.com">
+        <div class="action-card-left">
+          <div class="icon-box icon-email">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="#FFFFFF">
+              <path
+                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+            </svg>
+          </div>
+          <div class="action-text">
+            <span class="action-title" data-i18n="email_title">Contact par Email</span>
+            <span class="action-subtitle">algeria.homerental@gmail.com</span>
+          </div>
+        </div>
+        <div class="action-card-right-group">
+          <button class="mini-copy-btn" onclick="copyEmail(event)" title="Copier l'email" aria-label="Copier l'email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span data-i18n="copy_btn">Copier</span>
+          </button>
+          <div class="action-arrow">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Instagram -->
+      <a class="action-card" id="insta-link" href="https://www.instagram.com/algerie_loc" target="_blank"
+        rel="noopener noreferrer">
+        <div class="action-card-left">
+          <div class="icon-box icon-insta">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#FFFFFF" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5.5" ry="5.5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </div>
+          <div class="action-text">
+            <span class="action-title">Instagram</span>
+            <span class="action-subtitle" data-i18n="insta_sub">@algerie_loc • Photos, stories & actualités</span>
+          </div>
+        </div>
+        <div class="action-arrow">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- 6. TikTok -->
+      <a class="action-card" id="tiktok-link" href="https://www.tiktok.com/@location.algerie0" target="_blank"
+        rel="noopener noreferrer">
+        <div class="action-card-left">
+          <div class="icon-box icon-tiktok">
+            <svg viewBox="0 0 32 32" width="22" height="22">
+              <path fill="#25F4EE"
+                d="M21 7.7a7.2 7.2 0 0 1 4.7 2.6v-1A7.3 7.3 0 0 1 21.5 4.4h-.5v3.3zM15.4 12.3c-.4-.08-.8-.12-1.2-.12a6.8 6.8 0 0 0-6.8 6.8c0 3.2 2.2 5.9 5.2 6.6v-3.1a3.8 3.8 0 0 1-2.2-3.5c0-2.1 1.7-3.8 3.8-3.8.4 0 .8.06 1.2.17v-3.05z" />
+              <path fill="#FE2C55"
+                d="M25.7 9.3c-.8-.06-1.6-.26-2.4-.6v10.3a6.8 6.8 0 0 1-6.8 6.8 6.7 6.7 0 0 1-3.9-1.2v3.1a6.8 6.8 0 0 0 7.1-1.9 6.8 6.8 0 0 0 1.6-4.9V8.7a7.3 7.3 0 0 0 4.4 2.2v-1.6z" />
+              <path fill="#FFFFFF"
+                d="M25.7 10.3a7.2 7.2 0 0 1-4.7-2.6V19a6.8 6.8 0 1 1-6.8-6.8c.4 0 .8.04 1.2.12V16a3.8 3.8 0 1 0 2.6 3.6V3h3.5a7.3 7.3 0 0 0 4.2 4.9v2.4z" />
+            </svg>
+          </div>
+          <div class="action-text">
+            <span class="action-title">TikTok</span>
+            <span class="action-subtitle" data-i18n="tiktok_sub">@location.algerie0 • Vidéos de nos voitures</span>
+          </div>
+        </div>
+        <div class="action-arrow">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- 7. Snapchat -->
+      <a class="action-card" id="snap-link" href="https://snapchat.com/t/znQ1jUvp" target="_blank"
+        rel="noopener noreferrer">
+        <div class="action-card-left">
+          <div class="icon-box icon-snap">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="#FFFFFF" stroke="#000000" stroke-width="0.75"
+              stroke-linejoin="round">
+              <path
+                d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z" />
+            </svg>
+          </div>
+          <div class="action-text">
+            <span class="action-title">Snapchat</span>
+            <span class="action-subtitle" data-i18n="snap_sub">Stories & coulisses en direct</span>
+          </div>
+        </div>
+        <div class="action-arrow">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- 8. Google Maps Location -->
+      <a class="action-card" id="maps-link" href="https://goo.gl/maps/paNBs9VnmfFhrsESA" target="_blank"
+        rel="noopener noreferrer">
+        <div class="action-card-left">
+          <div class="icon-box icon-maps">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path fill="#4285F4" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+              <path fill="#EA4335" d="M12 2C8.13 2 5 5.13 5 9c0 2.22 1.05 4.7 2.45 7.15L12 9V2z" />
+              <path fill="#FBBC04" d="M12 9l-4.55 7.15c1.47 2.58 3.32 4.65 4.55 5.85V9z" />
+              <path fill="#34A853" d="M12 22s5.53-6.14 6.55-10.85L12 9v13z" />
+              <circle cx="12" cy="9" r="3.2" fill="#FFFFFF" />
+            </svg>
+          </div>
+          <div class="action-text">
+            <span class="action-title" data-i18n="maps_title">Localisation & Agence</span>
+            <span class="action-subtitle" data-i18n="maps_sub">Dar El Beïda, Alger • Proche Aéroport</span>
+          </div>
+        </div>
+        <div class="action-arrow">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- 9. Google Reviews (Social Proof with 5 Stars) -->
+      <a class="action-card" id="review-link" href="https://g.page/r/CaT9AwQUQlh0EBE/review" target="_blank"
+        rel="noopener noreferrer">
+        <div class="action-card-left">
+          <div class="icon-box icon-review">
+            <svg viewBox="0 0 24 24" width="23" height="23">
+              <path fill="#4285F4"
+                d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z" />
+              <path fill="#34A853"
+                d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.24v3.15C3.26 21.36 7.34 24 12 24z" />
+              <path fill="#FBBC05"
+                d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.24C.45 8.16 0 9.97 0 12s.45 3.84 1.24 5.42l4.04-3.15z" />
+              <path fill="#EA4335"
+                d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.24 6.58l4.04 3.15c.95-2.83 3.6-4.98 6.72-4.98z" />
+            </svg>
+          </div>
+          <div class="action-text">
+            <span class="action-title" data-i18n="reviews_title">Avis Clients Google</span>
+            <span class="action-subtitle">
+              <span class="star-rating">★★★★★</span>
+              <span data-i18n="reviews_sub">4.9/5 • Donnez votre avis</span>
+            </span>
+          </div>
+        </div>
+        <div class="action-arrow">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- Interactive Location & Navigation Section -->
+    <section class="map-wrapper">
+      <div class="map-header">
+        <div style="display:flex; align-items:center; gap:7px;">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary-blue)">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span data-i18n="location_header">Notre Emplacement en Algérie</span>
+        </div>
+        <a href="https://goo.gl/maps/paNBs9VnmfFhrsESA" target="_blank" rel="noopener noreferrer"
+          style="font-size:11.5px; font-weight:700; color:var(--primary-blue); text-decoration:none;"
+          data-i18n="open_maps">
+          Ouvrir ↗
+        </a>
+      </div>
+
+      <div class="map-container" id="map-box">
+        <div class="map-facade-placeholder" id="map-placeholder" onclick="loadInteractiveMap()">
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--primary-blue)" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:8px;">
+            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+            <line x1="8" y1="2" x2="8" y2="18"></line>
+            <line x1="16" y1="6" x2="16" y2="22"></line>
+          </svg>
+          <div style="font-size:13px; font-weight:800; color:var(--text-primary);" data-i18n="agency_city">Dar El Beïda,
+            Alger, Algérie</div>
+          <div style="font-size:11.5px; color:var(--text-secondary); margin-top:3px;" data-i18n="agency_sub">À 10 min de
+            l'Aéroport International Houari Boumediene</div>
+          <button class="map-load-btn" data-i18n="load_map_btn">
+            <span>Afficher la carte interactive</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Share & Profile Quick Actions -->
+    <section class="share-section">
+      <button class="share-btn" onclick="shareProfile()">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+          <path
+            d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+        </svg>
+        <span data-i18n="share_btn">Partager le profil</span>
+      </button>
+      <button class="share-btn" onclick="openQrModal()">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+        </svg>
+        <span data-i18n="qr_btn">Afficher QR Code</span>
+      </button>
+    </section>
+
+    <!-- Semantic Footer -->
+    <footer>
+      <div>Location Algérie • locationalgerie.fr</div>
+      <div style="font-size:11px; margin-top:4px;">© 2026 • Tous droits réservés • دار البيضاء، الجزائر</div>
+    </footer>
+
+  </main>
+
+  <script>
+    /* ==========================================================================
+       Fleet Catalog Data
+       ========================================================================== */
+    const fleetCatalog = [
+      {
+        name: "Renault Clio 5",
+        tag: "Édition Récente • Économique & Confort",
+        img: "https://ik.imagekit.io/xiubx7d3g/link%20bio/Renault%20Clio%20au%20showroom%20Location%20Alg%C3%A9rie.png?tr=w-1000,q-85,f-auto",
+        specs: ["5 Places", "Climatisation", "Essence", "Boîte Manuelle", "Bluetooth"],
+        waText: "Bonjour Location Algérie, je souhaite réserver la Renault Clio 5. Quelles sont vos disponibilités et tarifs ?"
+      },
+      {
+        name: "Peugeot 208",
+        tag: "Style & Confort de Conduite",
+        img: "https://ik.imagekit.io/xiubx7d3g/link%20bio/Showroom%20Peugeot%20aux%20couleurs%20de%20Location%20Alg%C3%A9rie.png?tr=w-1000,q-85,f-auto",
+        specs: ["5 Places", "Climatisation", "Écran Tactile", "Boîte Manuelle / Auto", "Économique"],
+        waText: "Bonjour Location Algérie, je souhaite réserver la Peugeot 208. Quelles sont vos disponibilités et tarifs ?"
+      },
+      {
+        name: "SEAT Ibiza",
+        tag: "Sportive, Urbaine & Dynamique",
+        img: "https://ik.imagekit.io/xiubx7d3g/link%20bio/Showroom%20moderne%20avec%20SEAT%20grise.png?tr=w-1000,q-85,f-auto",
+        specs: ["5 Places", "Climatisation", "Design Moderne", "Conduite Souple", "Régulateur"],
+        waText: "Bonjour Location Algérie, je souhaite réserver la SEAT Ibiza. Quelles sont vos disponibilités et tarifs ?"
+      },
+      {
+        name: "Fiat Tipo Berline",
+        tag: "Familiale & Spacieuse • Grand Coffre 520L",
+        img: "https://ik.imagekit.io/xiubx7d3g/link%20bio/Berline%20Fiat%20dans%20un%20showroom%20moderne.png?tr=w-1000,q-85,f-auto",
+        specs: ["5 Places", "Grand Coffre 520L", "Idéale Longs Trajets", "Climatisation", "Confort"],
+        waText: "Bonjour Location Algérie, je souhaite réserver la Fiat Tipo Berline. Quelles sont vos disponibilités et tarifs ?"
+      }
+    ];
+
+    let currentFleetIndex = 0;
+
+    /* ==========================================================================
+       Bilingual i18n Dictionary (FR / AR)
+       ========================================================================== */
+    const i18n = {
+      fr: {
+        status_text: "Ouvert 7j/7 • Service Réactif 24h/24",
+        brand_title: "Location Algérie",
+        bio_text: "Votre agence de location de voiture de confiance en Algérie.",
+        slogan_text: "Réservation express • Flotte récente • Prise en charge aéroports",
+        chip_fleet: "Flotte 2024-2026",
+        chip_airport: "Aéroport Alger",
+        chip_instant: "Devis Immédiat",
+        fleet_title: "Nos Véhicules Disponibles",
+        fleet_hint: "Toucher pour réserver",
+        car1_badge: "Essence • Manuelle",
+        car2_badge: "Confort • Moderne",
+        car3_badge: "Sport & Urbaine",
+        car4_badge: "Grand Coffre 520L",
+        book_pill: "Réserver",
+        wa_title: "WhatsApp Direct",
+        wa_sub: "+33 7 67 69 16 59 • Devis immédiat 24/7",
+        copy_btn: "Copier",
+        phone_title: "Appel Téléphonique Direct",
+        phone_sub: "+33 7 67 69 16 59 • Service Client 7j/7",
+        site_title: "Site Web Officiel",
+        site_sub: "locationalgerie.fr • Voir toute la flotte & tarifs",
+        app_showcase_title: "Application Mobile",
+        app_showcase_sub: "Réservez en 1 clic • Disponible 24/7",
+        app_badge_live: "Officielle",
+        play_store_sub: "Disponible sur",
+        play_store_name: "Google Play",
+        app_store_sub: "Bientôt sur",
+        app_store_name: "App Store",
+        coming_soon_tag: "Bientôt",
+        ios_toast_msg: "🚀 L'application iOS pour iPhone arrive très bientôt sur l'App Store !",
+        app_title: "Application Android",
+        app_sub: "Télécharger sur Google Play • Réservation facile",
+        email_title: "Contact par Email",
+        insta_sub: "@algerie_loc • Photos, stories & actualités",
+        tiktok_sub: "@location.algerie0 • Vidéos de nos voitures",
+        snap_sub: "Stories & coulisses en direct",
+        maps_title: "Localisation & Agence",
+        maps_sub: "Dar El Beïda, Alger • Proche Aéroport",
+        reviews_title: "Avis Clients Google",
+        reviews_sub: "4.9/5 • Donnez votre avis",
+        location_header: "Notre Emplacement en Algérie",
+        open_maps: "Ouvrir ↗",
+        agency_city: "Dar El Beïda, Alger, Algérie",
+        agency_sub: "À 10 min de l'Aéroport International Houari Boumediene",
+        load_map_btn: "Afficher la carte interactive",
+        share_btn: "Partager le profil",
+        qr_btn: "Afficher QR Code",
+        float_call: "Appeler",
+        qr_title: "Scanner le QR Code",
+        qr_subtitle: "Scannez pour ouvrir le profil Location Algérie sur votre téléphone",
+        lightbox_btn: "Réserver ce véhicule sur WhatsApp",
+        copied_toast: "Copié dans le presse-papiers !"
+      },
+      ar: {
+        status_text: "مفتوح 7/7 • خدمة سريعة متواصلة 24/24",
+        brand_title: "كراء السيارات في الجزائر",
+        bio_text: "وكالتكم الموثوقة لتأجير السيارات الحديثة في الجزائر.",
+        slogan_text: "حجز سريع ومضمون • سيارات جديدة • تسليم في المطار",
+        chip_fleet: "أسطول 2024-2026",
+        chip_airport: "مطار الجزائر الدولي",
+        chip_instant: "عرض سعر فوري",
+        fleet_title: "السيارات المتوفرة للحجز",
+        fleet_hint: "اضغط للحجز والتفاصيل",
+        car1_badge: "بنزين • يدوي",
+        car2_badge: "راحة • فخامة",
+        car3_badge: "رياضية • عصرية",
+        car4_badge: "صندوق أمتعة كبير 520L",
+        book_pill: "حجز",
+        wa_title: "واتساب مباشر",
+        wa_sub: "+33 7 67 69 16 59 • رد فوري 24/7",
+        copy_btn: "نسخ",
+        phone_title: "اتصال هاتفي مباشر",
+        phone_sub: "+33 7 67 69 16 59 • خدمة الزبائن 7/7",
+        site_title: "الموقع الإلكتروني الرسمي",
+        site_sub: "locationalgerie.fr • تصفح كل السيارات والأسعار",
+        app_showcase_title: "تطبيق الهاتف المحمول",
+        app_showcase_sub: "حجز فوري بضغطة زر • خدمة 24/7",
+        app_badge_live: "الرسمي",
+        play_store_sub: "تحميل من",
+        play_store_name: "Google Play",
+        app_store_sub: "قريباً على",
+        app_store_name: "App Store",
+        coming_soon_tag: "قريباً",
+        ios_toast_msg: "🚀 تطبيق الآيفون (iOS) سيكون متوفراً قريباً جداً على متجر App Store !",
+        app_title: "تطبيق الأندرويد الرسمي",
+        app_sub: "تحميل من Google Play • حجز سهل وسريع",
+        email_title: "التواصل عبر البريد",
+        insta_sub: "@algerie_loc • صور وستوريات يومية",
+        tiktok_sub: "@location.algerie0 • فيديوهات سياراتنا",
+        snap_sub: "ستوريات وكواليس مباشرة",
+        maps_title: "موقع الوكالة في الجزائر",
+        maps_sub: "الدار البيضاء، الجزائر العاصمة • قرب المطار",
+        reviews_title: "تقييمات وآراء العملاء",
+        reviews_sub: "4.9/5 • شاركنا تجربتك",
+        location_header: "موقع وكالتنا في الجزائر العاصمة",
+        open_maps: "فتح الخريطة ↗",
+        agency_city: "الدار البيضاء، الجزائر العاصمة",
+        agency_sub: "على بعد 10 دقائق من مطار هواري بومدين الدولي",
+        load_map_btn: "عرض الخريطة التفاعلية",
+        share_btn: "مشاركة الملف",
+        qr_btn: "رمز الاستجابة QR",
+        float_call: "اتصال",
+        qr_title: "مسح رمز QR",
+        qr_subtitle: "امسح الرمز لفتح صفحة الوكالة مباشرة على هاتفك",
+        lightbox_btn: "احجز هذه السيارة عبر واتساب",
+        copied_toast: "تم النسخ بنجاح !"
+      }
+    };
+
+    let currentLang = 'fr';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.setAttribute('lang', lang);
+      document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+      document.getElementById('lang-text').innerText = lang === 'ar' ? 'عربي' : 'FR';
+
+      const dict = i18n[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) {
+          el.innerText = dict[key];
+        }
+      });
+
+      const lbBtnText = document.getElementById('lightbox-btn-text');
+      if (lbBtnText) {
+        lbBtnText.innerText = dict.lightbox_btn;
+      }
+
+      try {
+        localStorage.setItem('loc_algerie_lang', lang);
+      } catch (e) { }
+    }
+
+    function toggleLanguage() {
+      setLanguage(currentLang === 'fr' ? 'ar' : 'fr');
+    }
+
+    /* ==========================================================================
+       Theme Mode (Dark / Light)
+       ========================================================================== */
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      const moon = document.getElementById('theme-icon-moon');
+      const sun = document.getElementById('theme-icon-sun');
+      const metaTheme = document.getElementById('meta-theme-color');
+
+      if (theme === 'dark') {
+        moon.style.display = 'none';
+        sun.style.display = 'block';
+        if (metaTheme) metaTheme.setAttribute('content', '#0B192E');
+      } else {
+        moon.style.display = 'block';
+        sun.style.display = 'none';
+        if (metaTheme) metaTheme.setAttribute('content', '#0084FF');
+      }
+
+      try {
+        localStorage.setItem('loc_algerie_theme', theme);
+      } catch (e) { }
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+
+    /* ==========================================================================
+       Enhanced Vehicle Lightbox with Booking Action
+       ========================================================================== */
+    function openLightboxByIndex(index) {
+      currentFleetIndex = index;
+      const car = fleetCatalog[index];
+      if (!car) return;
+
+      const modal = document.getElementById('lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const title = document.getElementById('lightbox-title');
+      const tag = document.getElementById('lightbox-tag');
+      const specs = document.getElementById('lightbox-specs');
+      const waBtn = document.getElementById('lightbox-wa-btn');
+
+      img.src = car.img;
+      title.innerText = car.name;
+      tag.innerText = car.tag;
+
+      specs.innerHTML = car.specs.map(s => `<span class="spec-chip">${s}</span>`).join('');
+      waBtn.href = "https://wa.me/33767691659?text=" + encodeURIComponent(car.waText);
+
+      document.body.style.overflow = 'hidden';
+      modal.classList.add('active');
+    }
+
+    function closeLightbox(e) {
+      if (e && e.target !== e.currentTarget && !e.target.classList.contains('modal-close-btn')) return;
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function navigateFleet(dir) {
+      const newIndex = (currentFleetIndex + dir + fleetCatalog.length) % fleetCatalog.length;
+      openLightboxByIndex(newIndex);
+    }
+
+    // Keyboard shortcuts for Lightbox & Modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+        closeQrModal();
+      } else if (e.key === 'ArrowLeft') {
+        if (document.getElementById('lightbox-modal').classList.contains('active')) {
+          navigateFleet(-1);
+        }
+      } else if (e.key === 'ArrowRight') {
+        if (document.getElementById('lightbox-modal').classList.contains('active')) {
+          navigateFleet(1);
+        }
+      }
     });
-  }
-}
 
-function showToast(msg) {
-  const toast = document.getElementById('toast');
-  toast.innerText = msg;
-  toast.classList.add('show');
-  setTimeout(() => {
-    toast.classList.remove('show');
-  }, 2500);
-}
+    /* ==========================================================================
+       QR Code Modal
+       ========================================================================== */
+    function openQrModal() {
+      const modal = document.getElementById('qr-modal');
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
 
-// Page Loader Smooth Dismissal
-function dismissLoader() {
-  const loader = document.getElementById('page-loader');
-  if (loader && !loader.classList.contains('loader-hidden')) {
-    loader.classList.add('loader-hidden');
-    setTimeout(() => {
-      loader.style.display = 'none';
-    }, 700);
-  }
-}
+    function closeQrModal(e) {
+      if (e && e.target !== e.currentTarget && !e.target.classList.contains('modal-close-btn')) return;
+      const modal = document.getElementById('qr-modal');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
 
-if (document.readyState === 'complete') {
-  setTimeout(dismissLoader, 1100);
-} else {
-  window.addEventListener('load', () => {
-    setTimeout(dismissLoader, 1100);
-  });
-  setTimeout(dismissLoader, 2800);
-}
+    /* ==========================================================================
+       Universal Sharing & Copying with In-App Browser Fallback
+       ========================================================================== */
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastText = document.getElementById('toast-text');
+      toastText.innerText = message || i18n[currentLang].copied_toast;
+      toast.classList.add('show');
 
-window.openLightbox = openLightbox;
-window.closeLightbox = closeLightbox;
-window.shareProfile = shareProfile;
-</script>
+      clearTimeout(window.__toastTimeout);
+      window.__toastTimeout = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    function resilientCopyText(text, successMsg) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(successMsg);
+        }).catch(() => {
+          fallbackExecCopy(text, successMsg);
+        });
+      } else {
+        fallbackExecCopy(text, successMsg);
+      }
+    }
+
+    function fallbackExecCopy(text, successMsg) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.left = '-9999px';
+      textarea.style.top = '0';
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      try {
+        document.execCommand('copy');
+        showToast(successMsg);
+      } catch (err) {
+        showToast(text);
+      }
+      document.body.removeChild(textarea);
+    }
+
+    function copyPhone(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      resilientCopyText("+33767691659", currentLang === 'ar' ? "تم نسخ رقم الهاتف !" : "Numéro de téléphone copié !");
+    }
+
+    function copyEmail(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      resilientCopyText("algeria.homerental@gmail.com", currentLang === 'ar' ? "تم نسخ البريد الإلكتروني !" : "Adresse email copiée !");
+    }
+
+    function shareProfile() {
+      const pageUrl = "https://locationalgerie.fr/";
+      const pageTitle = "Location Algérie | Location de Voiture 7j/7";
+      const shareText = "Location Algérie - Votre agence de location de voiture de confiance en Algérie.";
+
+      if (navigator.share) {
+        navigator.share({
+          title: pageTitle,
+          text: shareText,
+          url: pageUrl
+        }).catch(() => { });
+      } else {
+        resilientCopyText(pageUrl, currentLang === 'ar' ? "تم نسخ رابط الموقع !" : "Lien de l'agence copié !");
+      }
+    }
+
+    function notifyIosComingSoon(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      const btn = document.getElementById('app-ios-btn');
+      if (btn) {
+        btn.classList.remove('btn-wiggle');
+        void btn.offsetWidth; // Force reflow to restart animation
+        btn.classList.add('btn-wiggle');
+        setTimeout(() => {
+          btn.classList.remove('btn-wiggle');
+        }, 600);
+      }
+      const msg = (i18n[currentLang] && i18n[currentLang].ios_toast_msg)
+        ? i18n[currentLang].ios_toast_msg
+        : "🚀 L'application iOS pour iPhone arrive très bientôt sur l'App Store !";
+      showToast(msg);
+    }
+
+    /* ==========================================================================
+       Lazy-Loaded Interactive Google Maps Facade
+       ========================================================================== */
+    function loadInteractiveMap() {
+      const box = document.getElementById('map-box');
+      if (!box) return;
+      box.innerHTML = `
+    <iframe src="https://maps.google.com/maps?q=36.703000,3.207000&hl=${currentLang}&z=15&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            title="Localisation Google Maps Location Algérie">
+    </iframe>
+  `;
+    }
+
+    // Auto-load map when scrolled into viewport
+    // Interactive map loads on demand (click placeholder or button) to keep 100% smooth 60fps scrolling
+
+    /* ==========================================================================
+       Touch Drag & Carousel Interaction
+       ========================================================================== */
+    const scroller = document.getElementById('fleet-scroller');
+    if (scroller) {
+      scroller.addEventListener('mouseenter', () => scroller.classList.add('is-paused'));
+      scroller.addEventListener('mouseleave', () => scroller.classList.remove('is-paused'));
+
+      scroller.addEventListener('touchstart', () => scroller.classList.add('is-paused'), { passive: true });
+      scroller.addEventListener('touchend', () => {
+        setTimeout(() => scroller.classList.remove('is-paused'), 1200);
+      }, { passive: true });
+    }
+
+    /* ==========================================================================
+       Sticky Floating Mobile Quick Actions Bar (Throttled via requestAnimationFrame)
+       ========================================================================== */
+    const floatingBar = document.getElementById('floating-bar');
+    let floatingBarDismissed = false;
+    let scrollTicking = false;
+
+    window.addEventListener('scroll', () => {
+      if (floatingBarDismissed || !floatingBar) return;
+      if (!scrollTicking) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY > 260) {
+            floatingBar.classList.add('visible');
+          } else {
+            floatingBar.classList.remove('visible');
+          }
+          scrollTicking = false;
+        });
+        scrollTicking = true;
+      }
+    }, { passive: true });
+
+    function dismissFloatingBar() {
+      floatingBarDismissed = true;
+      if (floatingBar) floatingBar.classList.remove('visible');
+    }
+
+    /* ==========================================================================
+       Fast, Smooth Page Loader Dismissal
+       ========================================================================== */
+    function dismissLoader() {
+      const loader = document.getElementById('page-loader');
+      if (loader && !loader.classList.contains('loader-hidden')) {
+        loader.classList.add('loader-hidden');
+        setTimeout(() => {
+          loader.remove();
+        }, 400);
+      }
+    }
+
+    // Dismiss loader as soon as DOM is interactive
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(dismissLoader, 150);
+      });
+    } else {
+      setTimeout(dismissLoader, 150);
+    }
+    // Ultimate fallback
+    setTimeout(dismissLoader, 1500);
+
+    /* ==========================================================================
+       Initialization (Restore Preferences)
+       ========================================================================== */
+    try {
+      const savedTheme = localStorage.getItem('loc_algerie_theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark');
+      }
+
+      const savedLang = localStorage.getItem('loc_algerie_lang');
+      if (savedLang && (savedLang === 'fr' || savedLang === 'ar')) {
+        setLanguage(savedLang);
+      }
+    } catch (e) { }
+
+    // Global exports
+    window.openLightboxByIndex = openLightboxByIndex;
+    window.closeLightbox = closeLightbox;
+    window.navigateFleet = navigateFleet;
+    window.openQrModal = openQrModal;
+    window.closeQrModal = closeQrModal;
+    window.shareProfile = shareProfile;
+    window.copyPhone = copyPhone;
+    window.copyEmail = copyEmail;
+    window.toggleLanguage = toggleLanguage;
+    window.toggleTheme = toggleTheme;
+    window.loadInteractiveMap = loadInteractiveMap;
+    window.dismissFloatingBar = dismissFloatingBar;
+    window.dismissLoader = dismissLoader;
+  </script>
 </body>
+
 </html>
